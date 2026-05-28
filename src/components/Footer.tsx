@@ -44,6 +44,16 @@ export default function Footer() {
                 Rekayasa Frontend
               </Link>
             </li>
+            <li>
+              <Link href="/#posts" className="text-neutral-500 hover:text-white transition-colors">
+                Simulasi & Komputasi
+              </Link>
+            </li>
+            <li>
+              <Link href="/#posts" className="text-neutral-500 hover:text-white transition-colors">
+                Embedded & IoT
+              </Link>
+            </li>
           </ul>
         </div>
 

@@ -110,6 +110,20 @@ export default async function Home() {
                   </div>
                   <span className="text-[9px] bg-neutral-900 text-neutral-500 px-1 rounded">3.0</span>
                 </div>
+                <div className="flex items-center justify-between px-2 py-1.5 rounded hover:bg-neutral-900/30 hover:text-white transition-colors cursor-pointer">
+                  <div className="flex items-center space-x-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-neutral-500" />
+                    <span>Simulasi & Komputasi</span>
+                  </div>
+                  <span className="text-[9px] bg-neutral-900 text-neutral-500 px-1 rounded">4.0</span>
+                </div>
+                <div className="flex items-center justify-between px-2 py-1.5 rounded hover:bg-neutral-900/30 hover:text-white transition-colors cursor-pointer">
+                  <div className="flex items-center space-x-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-neutral-500" />
+                    <span>Embedded & IoT</span>
+                  </div>
+                  <span className="text-[9px] bg-neutral-900 text-neutral-500 px-1 rounded">5.0</span>
+                </div>
               </div>
             </div>
             
@@ -355,7 +369,7 @@ export default async function Home() {
           </div>
           <div className="lg:col-span-5 lg:text-right">
             <p className="text-xs md:text-sm text-neutral-500 leading-relaxed">
-              Tiga pilar utama rekayasa produk: Kecerdasan Buatan, Desain UX Berkecepatan Tinggi, dan Arsitektur Frontend Skala Besar.
+              Lima pilar utama rekayasa produk: Kecerdasan Buatan, Desain UX, Arsitektur Frontend, Simulasi Fisika & Komputasi, serta Sistem IoT & Perangkat Keras Pintar.
             </p>
           </div>
         </div>

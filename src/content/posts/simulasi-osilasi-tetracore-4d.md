@@ -2,12 +2,12 @@
 title: "Simulasi Osilasi Tetracore 4D: Eksperimen Fisika Teoretis Berbantuan AI"
 description: "Menganalisis implementasi real-time dari dinamika osilasi tetrahedron 4D berdasarkan teori Methane Metauniverse (MMU) karya Jürgen Wollbold, serta bagaimana teknologi modern memvisualisasikan konsep abstrak ini."
 date: "2026-05-29"
-category: "AI & Agen"
+category: "Simulasi & Komputasi"
 author: "Ahmad Pratama"
 authorRole: "AI & Physics Simulation Engineer"
 readingTime: "7 min read"
 featured: true
-number: "1.1"
+number: "4.1"
 coverImage: "/images/blog-tetracore-cover.png"
 ---
 

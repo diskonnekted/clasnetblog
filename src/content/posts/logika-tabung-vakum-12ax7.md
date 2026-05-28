@@ -2,12 +2,12 @@
 title: "Logika Tabung Vakum 12AX7: Menghidupkan Kembali Komputasi Vintage"
 description: "Membahas bagaimana proyek Vintage PC 12AX7 mereplikasi komputer tabung klasik dengan simulator sirkuit logika trioda ganda, visualizer PCB, dan panduan perakitan."
 date: "2026-05-29"
-category: "AI & Agen"
+category: "Embedded & IoT"
 author: "Ahmad Pratama"
 authorRole: "AI & Physics Simulation Engineer"
 readingTime: "7 min read"
 featured: false
-number: "1.4"
+number: "5.1"
 coverImage: "/images/blog-12ax7-tube-cover.png"
 ---
 

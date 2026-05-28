@@ -2,12 +2,12 @@
 title: "Visualisasi Kisi Tetrahedron 3D: Menjelajahi Geometri Ruang Fundamental"
 description: "Membahas bagaimana Tetrahedron 3D Viewer menggunakan Three.js WebGL untuk memvisualisasikan struktur kisi ruang-waktu MMU secara interaktif dengan presisi kristalografi."
 date: "2026-05-29"
-category: "Rekayasa Frontend"
+category: "Simulasi & Komputasi"
 author: "Budi Pratama"
 authorRole: "Senior Frontend Architect"
 readingTime: "6 min read"
 featured: false
-number: "3.1"
+number: "4.4"
 coverImage: "/images/blog-tetrahedron-3d-cover.png"
 ---
 

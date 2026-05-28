@@ -2,12 +2,12 @@
 title: "Otomasi Pertanian Desa Jenggawur: Integrasi Agen IoT & Drone"
 description: "Membahas bagaimana Smart Farm Monitoring System menggabungkan sensor tanah real-time dengan armada drone otonom untuk merevolusi pertanian presisi di Banjarnegara."
 date: "2026-05-29"
-category: "AI & Agen"
+category: "Embedded & IoT"
 author: "Ahmad Pratama"
 authorRole: "AI & Physics Simulation Engineer"
 readingTime: "7 min read"
 featured: false
-number: "1.5"
+number: "5.2"
 coverImage: "/images/blog-drone-farm-cover.png"
 ---
 

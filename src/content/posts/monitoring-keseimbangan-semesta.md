@@ -2,12 +2,12 @@
 title: "Memonitor Keseimbangan Semesta: Simulasi Berpasangan Counter-Tetrahedron"
 description: "Mengeksplorasi konsep Counter-Tetrahedron Pairing berdasarkan teori Methane Metauniverse (MMU) Jürgen Wollbold dan bagaimana visualisasi Tetrahedron Monitor melacak keselarasan materi-antimateri."
 date: "2026-05-29"
-category: "AI & Agen"
+category: "Simulasi & Komputasi"
 author: "Ahmad Pratama"
 authorRole: "AI & Physics Simulation Engineer"
 readingTime: "6 min read"
 featured: false
-number: "1.2"
+number: "4.2"
 coverImage: "/images/blog-tetrahedron-monitor-cover.png"
 ---
 

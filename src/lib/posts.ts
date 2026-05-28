@@ -74,6 +74,18 @@ export async function getCategoriesData(): Promise<CategoryData[]> {
       tagline: "Arsitektur web modern, performa bundling, dan optimasi runtime.",
       slugs: ["arsitektur-frontend-tanpa-bundle"],
     },
+    {
+      id: "4.0",
+      name: "Simulasi & Komputasi",
+      tagline: "Simulasi fisika teoretis, geometri dimensi tinggi, dan rekayasa komputasi.",
+      slugs: [],
+    },
+    {
+      id: "5.0",
+      name: "Embedded & IoT",
+      tagline: "Integrasi perangkat keras pintar, sistem sensor terdistribusi, dan otomasi lapangan.",
+      slugs: [],
+    },
   ];
 }
 

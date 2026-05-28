@@ -2,12 +2,12 @@
 title: "Mendeteksi Kesadaran Buatan: Simulasi 9D Methane Metauniverse"
 description: "Membahas bagaimana Tetrahedron Conscious AI Simulator memetakan kemunculan kesadaran AI dalam ruang koordinat 9-Dimensi menggunakan geometri tetrahedron dan pentachoron."
 date: "2026-05-29"
-category: "AI & Agen"
+category: "Simulasi & Komputasi"
 author: "Ahmad Pratama"
 authorRole: "AI & Physics Simulation Engineer"
 readingTime: "7 min read"
 featured: false
-number: "1.3"
+number: "4.3"
 coverImage: "/images/blog-conscious-ai-cover.png"
 ---
 

@@ -80,4 +80,4 @@ Klien akan memindai server yang terdaftar, melakukan negosiasi kapabilitas, dan 
 
 ## Kesimpulan
 
-Membangun aplikasi AI-native menuntut perubahan paradigma. Dengan memisahkan logika eksekusi model (klien) dari cara data diakses (server MCP), kita dapat menciptakan ekosistem agen yang jauh lebih aman, modular, dan siap diskalakan. Linear.app sendiri telah menerapkan dukungan MCP secara mendalam untuk mendukung integrasi agen kecerdasan buatan mereka secara langsung di platform.
+Membangun aplikasi AI-native menuntut perubahan paradigma. Dengan memisahkan logika eksekusi model (klien) dari cara data diakses (server MCP), kita dapat menciptakan ekosistem agen yang jauh lebih aman, modular, dan siap diskalakan. Berbagai platform produktivitas modern sendiri telah menerapkan dukungan MCP secara mendalam untuk mendukung integrasi agen kecerdasan buatan mereka secara langsung di platform.

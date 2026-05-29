@@ -74,8 +74,8 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="https://linear.app" target="_blank" className="text-neutral-500 hover:text-white transition-colors">
-                Inspirasi Linear
+              <Link href="https://github.com" target="_blank" className="text-neutral-500 hover:text-white transition-colors">
+                Repositori GitHub
               </Link>
             </li>
           </ul>

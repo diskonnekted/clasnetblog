@@ -44,7 +44,7 @@ Dalam psikologi desain UX, Hukum Hick menyatakan bahwa waktu yang dibutuhkan unt
 
 Bagi editor, kepastian status artikel—apakah sedang dalam bentuk draf, dijadwalkan, atau sudah tayang secara publik—adalah informasi krusial yang harus terlihat instan. 
 
-Orion CMS merancang alur kerja penerbitan halaman (*Post & Page Management*) secara linear:
+Orion CMS merancang alur kerja penerbitan halaman (*Post & Page Management*) secara berurutan:
 -   **Toggle Draf/Publish Instan**: Terletak di bagian pojok kanan atas editor dengan visualisasi warna lencana yang kontras (Kuning untuk Draf, Hijau untuk Terbit). Tombol peninjau (*Preview*) diletakkan sejajar untuk memberikan konfirmasi visual hasil akhir halaman sebelum dipublikasikan.
 -   **Kustomisasi Tampilan Dinamis**: Menu pengelolaan *Appearance* dirancang interaktif. Editor dapat mengubah susunan menu utama secara visual menggunakan alur drag-and-drop dan langsung melihat hasil perubahan struktur menu tersebut pada panel pratinjau yang disinkronkan.
 

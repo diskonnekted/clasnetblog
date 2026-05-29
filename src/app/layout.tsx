@@ -16,18 +16,18 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "ClasnetBlog — Jurnal & Wawasan untuk Kreator Produk",
-  description: "Platform blog premium yang dirancang untuk pembangun produk, tim pengembang, dan kreator modern. Terinspirasi dari estetika desain Linear.app.",
+  description: "Platform blog premium yang dirancang untuk pembangun produk, tim pengembang, dan kreator modern dengan estetika minimalis modern.",
   metadataBase: new URL("https://clasnetblog.vercel.app"),
   openGraph: {
     title: "ClasnetBlog — Jurnal & Wawasan untuk Kreator Produk",
-    description: "Platform blog premium yang dirancang untuk pembangun produk, tim pengembang, dan kreator modern. Terinspirasi dari estetika desain Linear.app.",
+    description: "Platform blog premium yang dirancang untuk pembangun produk, tim pengembang, dan kreator modern dengan estetika minimalis modern.",
     type: "website",
     locale: "id_ID",
   },
   twitter: {
     card: "summary_large_image",
     title: "ClasnetBlog — Jurnal & Wawasan untuk Kreator Produk",
-    description: "Platform blog premium yang dirancang untuk pembangun produk, tim pengembang, dan kreator modern. Terinspirasi dari estetika desain Linear.app.",
+    description: "Platform blog premium yang dirancang untuk pembangun produk, tim pengembang, dan kreator modern dengan estetika minimalis modern.",
   },
 };
 

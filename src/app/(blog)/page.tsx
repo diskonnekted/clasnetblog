@@ -156,7 +156,7 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Featured Article Section (Linear side-by-side layout) */}
+      {/* Featured Article Section (Side-by-side layout) */}
       {featuredPost && (
         <section id="posts" className="relative z-10 max-w-6xl mx-auto px-6 py-16 w-full">
           {/* Section Header Grid */}
@@ -176,7 +176,7 @@ export default async function Home() {
           <Link href={`/blog/${featuredPost.slug}`} className="block">
             <Card className="group">
               <div className="flex flex-col">
-                {/* Visual Graphics Block (Linear Aesthetic Cover Image) */}
+                {/* Visual Graphics Block (Premium Aesthetic Cover Image) */}
                 <div className="w-full h-64 md:h-[450px] relative overflow-hidden bg-neutral-950 border-b border-border-subtle flex items-center justify-center">
                   {featuredPost.coverImage ? (
                     /* eslint-disable-next-line @next/next/no-img-element */
@@ -241,7 +241,7 @@ export default async function Home() {
         </section>
       )}
 
-      {/* Numbered Category Grid (Linear Structure Concept) */}
+      {/* Numbered Category Grid (Premium Structure Concept) */}
       <section id="categories" className="relative z-10 max-w-6xl mx-auto px-6 py-16 w-full">
         {/* Section Header Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8 items-start border-b border-neutral-900 pb-6 mb-12">
@@ -298,7 +298,7 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Newsletter Section (Linear Footer CTA Style) */}
+      {/* Newsletter Section (Premium Footer CTA Style) */}
       <section id="newsletter" className="relative z-10 max-w-6xl mx-auto px-6 py-12 w-full mt-10">
         <Card className="border-border-subtle p-8 md:p-12 relative overflow-hidden bg-neutral-950">
           <div className="absolute inset-0 grid-bg opacity-15 pointer-events-none" />

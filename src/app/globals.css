@@ -9,7 +9,7 @@
   --text-secondary: #8a8a93;
   --border-subtle: rgba(255, 255, 255, 0.06);
   
-  /* Linear-style Monochromatic Gradients */
+  /* Premium Monochromatic Gradients */
   --white-glow: rgba(255, 255, 255, 0.03);
   --linear-gradient: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.7) 100%);
   --linear-gradient-text: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.55) 100%);
@@ -115,7 +115,7 @@ body {
   pointer-events: none;
 }
 
-/* Grid overlay background to match Linear's grid */
+/* Grid overlay background */
 .grid-bg {
   background-image: 
     linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),

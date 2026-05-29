@@ -259,62 +259,70 @@ export default async function Home() {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {categories.map((cat) => {
-            // Temukan postingan yang termasuk dalam kategori ini
-            const catPosts = posts.filter(
-              (p) => p.category.toLowerCase() === cat.name.toLowerCase() || cat.slugs.includes(p.slug)
-            );
+          {[
+            categories.filter((_, i) => i % 3 === 0),
+            categories.filter((_, i) => i % 3 === 1),
+            categories.filter((_, i) => i % 3 === 2),
+          ].map((columnCategories, colIdx) => (
+            <div key={colIdx} className="flex flex-col space-y-12">
+              {columnCategories.map((cat) => {
+                // Temukan postingan yang termasuk dalam kategori ini
+                const catPosts = posts.filter(
+                  (p) => p.category.toLowerCase() === cat.name.toLowerCase() || cat.slugs.includes(p.slug)
+                );
 
-            return (
-              <div key={cat.id} className="flex flex-col space-y-6">
-                {/* Header Kategori */}
-                <div className="border-b border-neutral-900 pb-4 flex flex-col space-y-2">
-                  <span className="text-xs font-mono text-neutral-500 font-bold uppercase tracking-wider">
-                    {cat.id}
-                  </span>
-                  <h3 className="text-base font-semibold text-white tracking-tight">
-                    {cat.name}
-                  </h3>
-                  <p className="text-xs text-neutral-500 leading-relaxed">
-                    {cat.tagline}
-                  </p>
-                </div>
+                return (
+                  <div key={cat.id} className="flex flex-col space-y-6">
+                    {/* Header Kategori */}
+                    <div className="border-b border-neutral-900 pb-4 flex flex-col space-y-2">
+                      <span className="text-xs font-mono text-neutral-500 font-bold uppercase tracking-wider">
+                        {cat.id}
+                      </span>
+                      <h3 className="text-base font-semibold text-white tracking-tight">
+                        {cat.name}
+                      </h3>
+                      <p className="text-xs text-neutral-500 leading-relaxed">
+                        {cat.tagline}
+                      </p>
+                    </div>
 
-                {/* Daftar Artikel Kategori */}
-                <div className="flex flex-col space-y-4">
-                  {catPosts.length > 0 ? (
-                    catPosts.map((post) => (
-                      <Link href={`/blog/${post.slug}`} key={post.slug} className="block">
-                        <Card className="p-4">
-                          <div className="flex flex-col space-y-3">
-                            {post.coverImage && (
-                              /* eslint-disable-next-line @next/next/no-img-element */
-                              <img
-                                src={post.coverImage}
-                                alt={post.title}
-                                className="w-full h-32 object-cover rounded-lg border border-border-subtle opacity-75 group-hover:opacity-100 transition-all duration-300"
-                              />
-                            )}
-                            <div className="flex flex-col space-y-1">
-                              <span className="text-[10px] text-neutral-500">{post.date} • {post.readingTime}</span>
-                              <h4 className="text-sm font-semibold text-white group-hover:text-neutral-300 transition-colors line-clamp-2 tracking-tight">
-                                {post.title}
-                              </h4>
-                              <p className="text-xs text-neutral-500 line-clamp-2 leading-relaxed">
-                                {post.description}
-                              </p>
-                            </div>
-                          </div>
-                        </Card>
-                      </Link>
-                    ))
-                  ) : (
-                    <span className="text-xs text-neutral-600 italic">Belum ada artikel di kategori ini.</span>
-                  )}
-                </div>
-              </div>
-            );
-          })}
+                    {/* Daftar Artikel Kategori */}
+                    <div className="flex flex-col space-y-4">
+                      {catPosts.length > 0 ? (
+                        catPosts.map((post) => (
+                          <Link href={`/blog/${post.slug}`} key={post.slug} className="block">
+                            <Card className="p-4">
+                              <div className="flex flex-col space-y-3">
+                                {post.coverImage && (
+                                  /* eslint-disable-next-line @next/next/no-img-element */
+                                  <img
+                                    src={post.coverImage}
+                                    alt={post.title}
+                                    className="w-full h-32 object-cover rounded-lg border border-border-subtle opacity-75 group-hover:opacity-100 transition-all duration-300"
+                                  />
+                                )}
+                                <div className="flex flex-col space-y-1">
+                                  <span className="text-[10px] text-neutral-500">{post.date} • {post.readingTime}</span>
+                                  <h4 className="text-sm font-semibold text-white group-hover:text-neutral-300 transition-colors line-clamp-2 tracking-tight">
+                                    {post.title}
+                                  </h4>
+                                  <p className="text-xs text-neutral-500 line-clamp-2 leading-relaxed">
+                                    {post.description}
+                                  </p>
+                                </div>
+                              </div>
+                            </Card>
+                          </Link>
+                        ))
+                      ) : (
+                        <span className="text-xs text-neutral-600 italic">Belum ada artikel di kategori ini.</span>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          ))}
         </div>
       </section>
 

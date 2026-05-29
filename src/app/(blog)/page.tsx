@@ -22,14 +22,6 @@ export default async function Home() {
 
       {/* Hero Section */}
       <section className="relative z-10 max-w-6xl mx-auto px-6 pt-28 pb-10 w-full flex flex-col items-start text-left">
-        {/* Glowing Badge */}
-        <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm mb-6 animate-glow-pulse">
-          <span className="w-1.5 h-1.5 rounded-full bg-neutral-400" />
-          <span className="text-[10px] uppercase tracking-wider font-semibold text-neutral-400">
-            Membuka Jurnal Baru
-          </span>
-        </div>
-
         {/* Hero Title */}
         <h1 className="text-4xl md:text-6xl font-semibold tracking-tighter text-white mb-6 max-w-3xl leading-[1.1] text-gradient">
           Jurnal Pembangunan Produk <br />
@@ -56,123 +48,6 @@ export default async function Home() {
           >
             Lihat Kategori
           </Link>
-        </div>
-
-        {/* Mock Blog Workspace Dashboard UI (Linear style mockup) */}
-        <div className="w-full mt-16 border border-neutral-850 bg-neutral-950/80 rounded-2xl aspect-[16/9] md:aspect-[21/9] overflow-hidden flex shadow-2xl relative group">
-          {/* Top window controls */}
-          <div className="absolute top-3 left-4 flex space-x-1.5 z-20">
-            <div className="w-2.5 h-2.5 rounded-full bg-neutral-800" />
-            <div className="w-2.5 h-2.5 rounded-full bg-neutral-800" />
-            <div className="w-2.5 h-2.5 rounded-full bg-neutral-800" />
-          </div>
-          
-          {/* Sidebar */}
-          <div className="w-1/4 border-r border-neutral-900 bg-neutral-950 p-4 pt-10 hidden sm:flex flex-col justify-between text-[11px] text-neutral-400 font-medium z-10 select-none">
-            <div className="space-y-6">
-              <div className="flex items-center space-x-2 px-2 py-1 rounded bg-neutral-900/40 border border-neutral-900">
-                <span className="w-2 h-2 rounded bg-neutral-400" />
-                <span className="text-white font-semibold text-xs">Jurnal Utama</span>
-              </div>
-              
-              <div className="space-y-1">
-                <div className="text-[10px] uppercase font-bold text-neutral-600 px-2 mb-2">Koleksi</div>
-                <div className="flex items-center space-x-2 px-2 py-1.5 rounded text-white bg-neutral-900/50">
-                  <span>📂</span>
-                  <span>Semua Artikel</span>
-                </div>
-                <div className="flex items-center space-x-2 px-2 py-1.5 rounded hover:bg-neutral-900/30 hover:text-white transition-colors cursor-pointer">
-                  <span>✨</span>
-                  <span>Artikel Unggulan</span>
-                </div>
-              </div>
-              
-              <div className="space-y-1">
-                <div className="text-[10px] uppercase font-bold text-neutral-600 px-2 mb-2">Pilar Kategori</div>
-                <div className="flex items-center justify-between px-2 py-1.5 rounded hover:bg-neutral-900/30 hover:text-white transition-colors cursor-pointer">
-                  <div className="flex items-center space-x-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-neutral-500" />
-                    <span>AI & Agen</span>
-                  </div>
-                  <span className="text-[9px] bg-neutral-900 text-neutral-500 px-1 rounded">1.0</span>
-                </div>
-                <div className="flex items-center justify-between px-2 py-1.5 rounded hover:bg-neutral-900/30 hover:text-white transition-colors cursor-pointer">
-                  <div className="flex items-center space-x-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-neutral-500" />
-                    <span>Desain UX</span>
-                  </div>
-                  <span className="text-[9px] bg-neutral-900 text-neutral-500 px-1 rounded">2.0</span>
-                </div>
-                <div className="flex items-center justify-between px-2 py-1.5 rounded hover:bg-neutral-900/30 hover:text-white transition-colors cursor-pointer">
-                  <div className="flex items-center space-x-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-neutral-500" />
-                    <span>Frontend</span>
-                  </div>
-                  <span className="text-[9px] bg-neutral-900 text-neutral-500 px-1 rounded">3.0</span>
-                </div>
-                <div className="flex items-center justify-between px-2 py-1.5 rounded hover:bg-neutral-900/30 hover:text-white transition-colors cursor-pointer">
-                  <div className="flex items-center space-x-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-neutral-500" />
-                    <span>Simulasi & Komputasi</span>
-                  </div>
-                  <span className="text-[9px] bg-neutral-900 text-neutral-500 px-1 rounded">4.0</span>
-                </div>
-                <div className="flex items-center justify-between px-2 py-1.5 rounded hover:bg-neutral-900/30 hover:text-white transition-colors cursor-pointer">
-                  <div className="flex items-center space-x-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-neutral-500" />
-                    <span>Embedded & IoT</span>
-                  </div>
-                  <span className="text-[9px] bg-neutral-900 text-neutral-500 px-1 rounded">5.0</span>
-                </div>
-              </div>
-            </div>
-            
-            <div className="flex items-center space-x-2 border-t border-neutral-900 pt-3 px-1">
-              <div className="w-5 h-5 rounded-full bg-neutral-800 flex items-center justify-center text-[9px] text-white">AP</div>
-              <div className="flex flex-col">
-                <span className="text-white text-[10px]">Ahmad Pratama</span>
-                <span className="text-[9px] text-neutral-600">Editor</span>
-              </div>
-            </div>
-          </div>
-          
-          {/* Main workspace */}
-          <div className="flex-1 bg-neutral-900/10 p-6 pt-10 flex flex-col space-y-6 overflow-hidden relative">
-            <div className="absolute inset-0 grid-bg opacity-15 pointer-events-none" />
-            
-            {/* Header bar */}
-            <div className="flex items-center justify-between border-b border-neutral-900 pb-3 z-10">
-              <div className="flex items-center space-x-2 text-xs">
-                <span className="text-neutral-500">Artikel</span>
-                <span className="text-neutral-700">/</span>
-                <span className="text-white">Membangun Aplikasi AI-Native</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <span className="w-2 h-2 rounded-full bg-neutral-500 animate-pulse" />
-                <span className="text-[10px] text-neutral-400 font-mono">LIVE / PUBLISHED</span>
-              </div>
-            </div>
-            
-            {/* Simulated content editor */}
-            <div className="flex-1 flex flex-col space-y-4 max-w-2xl z-10 select-none opacity-80">
-              <div className="w-1/3 h-3 bg-neutral-800 rounded" />
-              <div className="w-full h-8 bg-neutral-850/60 rounded-lg flex items-center px-4">
-                <div className="w-3/4 h-3 bg-neutral-800 rounded" />
-              </div>
-              <div className="space-y-2 pt-2">
-                <div className="w-full h-3 bg-neutral-900 rounded" />
-                <div className="w-full h-3 bg-neutral-900 rounded" />
-                <div className="w-5/6 h-3 bg-neutral-900 rounded" />
-              </div>
-              <div className="flex space-x-2 pt-4">
-                <div className="w-16 h-6 bg-neutral-850 border border-neutral-900 rounded-md" />
-                <div className="w-20 h-6 bg-neutral-850 border border-neutral-900 rounded-md" />
-              </div>
-            </div>
-            
-            {/* Soft metallic bottom border shine */}
-            <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-neutral-850 to-transparent" />
-          </div>
         </div>
       </section>
 

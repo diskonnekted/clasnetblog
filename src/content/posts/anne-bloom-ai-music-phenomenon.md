@@ -42,43 +42,43 @@ Jawabannya terletak pada cara manusia mengonsumsi seni. Musik adalah cermin proy
 Meskipun lirik dan musik tersebut dirangkai oleh algoritma yang mendeteksi asosiasi kata paling emosional dari jutaan data, pendengar manusia-lah yang memberikan "jiwa" dan makna pada lagu tersebut berdasarkan pengalaman hidup mereka sendiri.
 
 <div class="my-8 w-full rounded-2xl border border-neutral-900 bg-neutral-950/40 backdrop-blur-sm p-6 flex flex-col items-center space-y-6 relative overflow-hidden group hover:border-neutral-800 transition-colors duration-500">
-  <div class="px-4 py-2 rounded-full border border-neutral-850 bg-neutral-900 text-xs font-mono font-bold text-white tracking-widest uppercase">
-    ALUR SINTESIS MUSIK & INTEGRASI EMOSI MANUSIA
-  </div>
-  
-  <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full max-w-2xl">
-    <!-- Tahap 1: Generator Lirik & Emosi -->
-    <div class="border border-neutral-900 bg-neutral-950/60 rounded-xl p-4 flex flex-col items-center text-center relative overflow-hidden group/item">
-      <span class="text-[8px] font-mono text-neutral-500 mb-2">TAHAP 1: INPUT AI</span>
-      <h4 class="text-xs font-bold text-white mb-1">Algoritma Lirik</h4>
-      <p class="text-[10px] text-neutral-400">Pemetaan kata melankolis & tema eksistensial secara probabilistik.</p>
-    </div>
+<div class="px-4 py-2 rounded-full border border-neutral-850 bg-neutral-900 text-xs font-mono font-bold text-white tracking-widest uppercase">
+ALUR SINTESIS MUSIK & INTEGRASI EMOSI MANUSIA
+</div>
 
-    <!-- Tahap 2: Sintesis Audio & Vokal -->
-    <div class="border border-neutral-900 bg-neutral-950/60 rounded-xl p-4 flex flex-col items-center text-center relative overflow-hidden group/item">
-      <span class="text-[8px] font-mono text-neutral-500 mb-2">TAHAP 2: AUDIO ENGINE</span>
-      <h4 class="text-xs font-bold text-white mb-1">Synthesizer & Vokal</h4>
-      <p class="text-[10px] text-neutral-400">Generasi vokal bariton/alto dingin dengan efek reverb pasca-era 80-an.</p>
-    </div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full max-w-2xl">
+<!-- Tahap 1: Generator Lirik & Emosi -->
+<div class="border border-neutral-900 bg-neutral-950/60 rounded-xl p-4 flex flex-col items-center text-center relative overflow-hidden group/item">
+<span class="text-[8px] font-mono text-neutral-500 mb-2">TAHAP 1: INPUT AI</span>
+<h4 class="text-xs font-bold text-white mb-1">Algoritma Lirik</h4>
+<p class="text-[10px] text-neutral-400">Pemetaan kata melankolis & tema eksistensial secara probabilistik.</p>
+</div>
 
-    <!-- Tahap 3: Resonansi Pendengar -->
-    <div class="border border-neutral-900 bg-neutral-950/60 rounded-xl p-4 flex flex-col items-center text-center relative overflow-hidden group/item">
-      <span class="text-[8px] font-mono text-neutral-500 mb-2">TAHAP 3: RESONANSI</span>
-      <h4 class="text-xs font-bold text-white mb-1">Emosi Manusia</h4>
-      <p class="text-[10px] text-orange-400 font-medium">Pendengar memproyeksikan memori pribadi ke dalam lagu virtual.</p>
-    </div>
-  </div>
+<!-- Tahap 2: Sintesis Audio & Vokal -->
+<div class="border border-neutral-900 bg-neutral-950/60 rounded-xl p-4 flex flex-col items-center text-center relative overflow-hidden group/item">
+<span class="text-[8px] font-mono text-neutral-500 mb-2">TAHAP 2: AUDIO ENGINE</span>
+<h4 class="text-xs font-bold text-white mb-1">Synthesizer & Vokal</h4>
+<p class="text-[10px] text-neutral-400">Generasi vokal bariton/alto dingin dengan efek reverb pasca-era 80-an.</p>
+</div>
 
-  <!-- Indikator Keterlibatan Emosi -->
-  <div class="w-full max-w-2xl bg-neutral-950/50 p-4 rounded-xl border border-neutral-900">
-    <div class="flex justify-between items-center text-[10px] font-mono text-neutral-500 mb-1.5">
-      <span>TINGKAT KERAPUHAN EMOSI LAGU (THD OF SOUL)</span>
-      <span class="text-orange-500 font-bold">98% Resonansi Manusia</span>
-    </div>
-    <div class="w-full h-2 bg-neutral-900 rounded-full overflow-hidden border border-neutral-850/80">
-      <div class="h-full bg-gradient-to-r from-neutral-800 via-orange-500 to-amber-400 rounded-full shadow-[0_0_8px_rgba(249,115,22,0.3)]" style="width: 98%;"></div>
-    </div>
-  </div>
+<!-- Tahap 3: Resonansi Pendengar -->
+<div class="border border-neutral-900 bg-neutral-950/60 rounded-xl p-4 flex flex-col items-center text-center relative overflow-hidden group/item">
+<span class="text-[8px] font-mono text-neutral-500 mb-2">TAHAP 3: RESONANSI</span>
+<h4 class="text-xs font-bold text-white mb-1">Emosi Manusia</h4>
+<p class="text-[10px] text-orange-400 font-medium">Pendengar memproyeksikan memori pribadi ke dalam lagu virtual.</p>
+</div>
+</div>
+
+<!-- Indikator Keterlibatan Emosi -->
+<div class="w-full max-w-2xl bg-neutral-950/50 p-4 rounded-xl border border-neutral-900">
+<div class="flex justify-between items-center text-[10px] font-mono text-neutral-500 mb-1.5">
+<span>TINGKAT KERAPUHAN EMOSI LAGU (THD OF SOUL)</span>
+<span class="text-orange-500 font-bold">98% Resonansi Manusia</span>
+</div>
+<div class="w-full h-2 bg-neutral-900 rounded-full overflow-hidden border border-neutral-850/80">
+<div class="h-full bg-gradient-to-r from-neutral-800 via-orange-500 to-amber-400 rounded-full shadow-[0_0_8px_rgba(249,115,22,0.3)]" style="width: 98%;"></div>
+</div>
+</div>
 </div>
 
 ---

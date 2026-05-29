@@ -55,7 +55,7 @@ Secara visual, antarmuka modern memanfaatkan efek visual modern untuk memberikan
 - **Glassmorphism**: Memadukan warna latar belakang semi-transparan dengan filter `backdrop-filter: blur(12px)`. Ini menciptakan ilusi bahwa antarmuka memiliki beberapa lapisan fisik yang elegan.
 - **Borders Bercahaya**: Batas garis tipis (`1px`) dengan warna abu-abu transparan yang berubah menjadi menyala saat diarahkan oleh kursor memberikan umpan balik taktil yang sangat responsif.
 
-> [!TIP]
+>
 > Untuk meniru efek border glowing premium ini di Tailwind CSS v4, kita bisa memadukan variabel CSS `--card-border-hover` dengan transisi warna border yang halus agar tidak mengganggu fokus mata saat scrolling cepat.
 
 ## Kesimpulan

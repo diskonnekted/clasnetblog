@@ -70,7 +70,7 @@ Aliran data state partikel, amplitudo gelombang, dan indeks kestabilan dipancark
 
 Gagasan mengenai ruang dimensi tinggi dan keterikatan kuantum sering kali terasa terlalu abstrak bagi kebanyakan orang. Tetrahedron Monitor mengubah persepsi tersebut dengan cara:
 
-> [!TIP]
+>
 > **Belajar Melalui Interaksi Mikro**: Dengan menggeser slider *environmental noise* di dashboard, pengguna dapat melihat langsung bagaimana ketidakstabilan eksternal merusak keselarasan fase (dekoherensi) antara sumbu materi dan antimateri, yang akhirnya menurunkan grafik indeks kestabilan global hingga memicu status *System Destabilized*.
 
 Aplikasi ini membuktikan bahwa simulasi interaktif adalah cara terbaik untuk mengajarkan konsep-konsep fisika kuantum dan geometri dimensi tinggi kepada generasi insinyur masa depan.

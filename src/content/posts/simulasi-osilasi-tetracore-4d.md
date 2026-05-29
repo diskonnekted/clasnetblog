@@ -73,7 +73,7 @@ Selain menyajikan visualisasi estetis, simulasi ini memiliki fungsionalitas anal
 *   **Faktor Kestabilan (Stability Calculations)**: Sistem secara dinamis menghitung indeks stabilitas berdasarkan keseimbangan energi total. Jika pengguna memasukkan noise terlalu tinggi, sistem akan mendeteksi destabilisasi dan memvisualisasikan kekacauan (*chaos*) tersebut pada grafik.
 *   **Phase Coherence (Konsistensi Fase)**: Mengukur seberapa sinkron getaran antar-partikel untuk mensimulasikan fenomena koherensi kuantum.
 
-> [!NOTE]
+>
 > Proyek ini juga merupakan demonstrasi dari **Human-Machine Collaborative Creativity** (Kreativitas Kolaboratif Manusia-Mesin). Desain rumus matematika dan arsitektur kodenya dikembangkan secara iteratif melalui diskusi mendalam antara pengembang manusia dengan model kecerdasan buatan (AI) generatif untuk memecahkan hambatan konseptual.
 
 ---

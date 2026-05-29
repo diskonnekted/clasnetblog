@@ -57,7 +57,7 @@ Tepat pada momen transisi ini, mikrokontroler memicu kamera ESP32-CAM untuk meng
 
 Dalam instalasi industri terpencil (seperti area tambang atau galian C), koneksi internet seluler sering kali terbatas dan mahal. Orion LiDAR Load Scanner mengatasi masalah ini dengan menerapkan arsitektur komunikasi **Event-Driven**:
 
-> [!TIP]
+>
 > **Komunikasi Berbasis Peristiwa**: Perangkat IoT tidak mengirimkan data pengukuran secara terus-menerus (*periodic streaming*). Modul hanya akan mengaktifkan transmisi Wi-Fi/data dan mengirimkan muatan data (*JSON payload* beserta lampiran gambar JPEG) **hanya ketika satu siklus State Machine (Masuk -> Cari Puncak -> Keluar) selesai**. Strategi ini menghemat konsumsi energi baterai dan memotong penggunaan kuota data seluler hingga lebih dari **90%**.
 
 ---

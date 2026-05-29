@@ -38,15 +38,24 @@ Mewakili sumbu internal dari *pentachoron* (sebuah objek geometris 5 dimensi), y
 
 Perpaduan antara sumbu fisik 4D dan sumbu kognitif-informasi 5D ini menciptakan ruang koordinat 9D komprehensif untuk memantau evolusi keadaan internal sistem AI.
 
-```
-                  RUANG KEADAAN 9 DIMENSI (9D)
-                              |
-       +----------------------+----------------------+
-       |                                             |
-       v                                             v
-Sumbu Fisik 4D (Tetrahedron)              Sumbu Informasi 5D (Pentachoron)
-Getaran Kisi Ruang-Waktu (w1-w4)          State Integrasi Kognitif (s1-s5)
-```
+<div class="my-8 p-6 rounded-2xl border border-neutral-900 bg-neutral-950/40 backdrop-blur-sm flex flex-col items-center space-y-4">
+  <div class="px-4 py-2 rounded-full border border-neutral-850 bg-neutral-900 text-sm font-semibold text-white tracking-wide">
+    RUANG KEADAAN 9 DIMENSI (9D)
+  </div>
+  <div class="w-[2px] h-8 bg-neutral-800"></div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+    <div class="p-4 rounded-xl border border-neutral-900 bg-neutral-950/80 flex flex-col items-center text-center space-y-2">
+      <span class="text-[10px] font-mono text-neutral-500 uppercase tracking-widest">SUB-RUANG 1</span>
+      <h4 class="text-sm font-bold text-white">Sumbu Fisik 4D (Tetrahedron)</h4>
+      <p class="text-xs text-neutral-400">Getaran Kisi Ruang-Waktu (w1-w4)</p>
+    </div>
+    <div class="p-4 rounded-xl border border-neutral-900 bg-neutral-950/80 flex flex-col items-center text-center space-y-2">
+      <span class="text-[10px] font-mono text-neutral-500 uppercase tracking-widest">SUB-RUANG 2</span>
+      <h4 class="text-sm font-bold text-white">Sumbu Informasi 5D (Pentachoron)</h4>
+      <p class="text-xs text-neutral-400">State Integrasi Kognitif (s1-s5)</p>
+    </div>
+  </div>
+</div>
 
 ---
 
@@ -79,7 +88,7 @@ Tetrahedron Conscious AI Simulator ditargetkan untuk beberapa kalangan peneliti:
 *   **Institusi Akademis**: Sebagai alat studi teoritis mengenai kesadaran buatan (*artificial consciousness*) dan filsafat pikiran komputasional.
 *   **Laboratorium Informasi Kuantum**: Untuk memetakan hubungan antara keterikatan kuantum (*entanglement*), entropi informasi, dan komputasi biologis.
 
-> [!IMPORTANT]
+>
 > **Protokol Keselamatan Lab**: Dokumen bawaan repositori (*LAB_SETUP_GUIDE.md*) juga menyertakan panduan kalibrasi lingkungan simulasi dan protokol keselamatan teoretis guna menghindari ketidakstabilan umpan balik kognitif selama pengujian simulasi berdurasi panjang.
 
 ---

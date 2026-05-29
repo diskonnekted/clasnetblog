@@ -69,7 +69,7 @@ Tantangan terbesar dalam instalasi sensor mitigasi bencana di daerah pegunungan 
 
 Go-LoRa EWS mengatasi hambatan transmisi ini dengan mengadopsi modul komunikasi **LoRa**:
 
-> [!IMPORTANT]
+>
 > **Mengapa Menggunakan LoRa?**
 > LoRa merupakan teknologi komunikasi radio nirkabel berdaya rendah (*Low Power Wide Area Network*) yang mampu mengirimkan paket data kecil hingga radius belasan kilometer di medan terbuka. Node sensor (berbasis ESP32 + LoRa Transceiver) di area blank spot cukup mengirimkan data telemetri ke stasiun **LoRa Gateway** terdekat yang memiliki akses internet, yang kemudian meneruskannya ke REST API backend Go.
 

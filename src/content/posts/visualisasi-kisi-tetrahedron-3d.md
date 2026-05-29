@@ -72,7 +72,7 @@ Dengan desain modular ini, komponen visualizer 3D dapat dicopot dan dijalankan s
 
 Guna membantu riset sains secara riil, Tetrahedron 3D Viewer dilengkapi dengan panel metrik analisis spasial:
 
-> [!NOTE]
+>
 > **Metrik Kestabilan Kisi**: Selagi pengguna memperluas atau mempersempit skala kisi (*scale adjustment*), backend secara dinamis menghitung jarak antar-partikel terdekat dan menampilkan statistik koordinasi rata-rata (*average connectivity*) pada panel HUD, membantu peneliti menganalisis ambang batas deformasi geometris kisi.
 
 ---

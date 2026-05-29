@@ -73,7 +73,7 @@ Untuk menghadirkan simulasi fisika tabung vakum yang akurat di browser, proyek i
 
 Berbeda dengan sirkuit mikrotransistor modern yang bekerja pada tegangan aman 3.3V atau 5V DC, tabung vakum 12AX7 membutuhkan tegangan anoda tinggi—biasanya berkisar antara **100V hingga 250V DC**—agar elektron dapat melompat melewati ruang hampa udara secara efisien.
 
-> [!CAUTION]
+>
 > **Peringatan Tegangan Tinggi (High Voltage Warning)**: Perakitan sirkuit fisik proyek ini melibatkan tegangan searah yang cukup tinggi untuk membahayakan keselamatan jiwa. Aplikasi menyertakan modul *Safety Guidelines* yang mewajibkan penggunaan trafo isolasi, suplai daya variabel terisolasi, serta prosedur pelucutan muatan listrik (*discharge*) pada kapasitor filter daya sebelum menyentuh sirkuit fisik.
 
 ---

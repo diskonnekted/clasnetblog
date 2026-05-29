@@ -75,7 +75,7 @@ await server.connect(transport);
 ### 2. Menghubungkan Klien dengan Server
 Klien akan memindai server yang terdaftar, melakukan negosiasi kapabilitas, dan secara dinamis memperbarui daftar fungsi yang bisa dijalankan oleh model AI.
 
-> [!IMPORTANT]
+>
 > Keamanan adalah prioritas utama. Karena server MCP berjalan secara lokal atau dalam sandbox terisolasi, Anda memiliki kontrol penuh atas izin baca/tulis file atau eksekusi perintah sistem yang diberikan kepada agen AI.
 
 ## Kesimpulan

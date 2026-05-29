@@ -75,11 +75,17 @@ const portableTextComponents = {
         </div>
       );
     },
+    htmlBlock: ({ value }: any) => {
+      if (!value || !value.html) return null;
+      return (
+        <div dangerouslySetInnerHTML={{ __html: value.html }} />
+      );
+    },
   },
   block: {
     h2: ({ children }: any) => <h2 className="text-xl md:text-2xl font-semibold text-white mt-10 mb-4 tracking-tight">{children}</h2>,
     h3: ({ children }: any) => <h3 className="text-lg md:text-xl font-semibold text-white mt-8 mb-3 tracking-tight">{children}</h3>,
-    normal: ({ children }: any) => <p className="text-neutral-400 mb-6 leading-relaxed">{children}</p>,
+    normal: ({ children }: any) => <div className="text-neutral-400 mb-6 leading-relaxed">{children}</div>,
     blockquote: ({ children }: any) => (
       <blockquote className="border-l-2 border-white pl-4 italic text-neutral-300 my-6">
         {children}
@@ -89,6 +95,42 @@ const portableTextComponents = {
   list: {
     bullet: ({ children }: any) => <ul className="list-disc pl-6 mb-6 space-y-2 text-neutral-400">{children}</ul>,
     number: ({ children }: any) => <ol className="list-decimal pl-6 mb-6 space-y-2 text-neutral-400">{children}</ol>,
+  },
+  marks: {
+    code: ({ children }: any) => {
+      const childrenArray = Array.isArray(children) ? children : [children];
+      let isBlock = false;
+      for (const child of childrenArray) {
+        if (typeof child === "string" && child.includes("\n")) {
+          isBlock = true;
+          break;
+        }
+        if (child && typeof child === "object") {
+          isBlock = true;
+          break;
+        }
+      }
+
+      if (isBlock) {
+        const cleanContent = childrenArray.map((child) => {
+          if (child && typeof child === "object") {
+            return "\n";
+          }
+          return child;
+        });
+
+        return (
+          <pre className="bg-[#0a0a0c] border border-neutral-900 p-5 rounded-xl overflow-x-auto my-6 font-mono text-sm text-neutral-200 block whitespace-pre">
+            <code className="!bg-transparent !p-0 !border-none !text-neutral-200 !text-sm">{cleanContent}</code>
+          </pre>
+        );
+      }
+      return (
+        <code className="px-1.5 py-0.5 rounded bg-white/10 border border-white/5 text-xs font-mono text-white">
+          {children}
+        </code>
+      );
+    },
   },
 };
 

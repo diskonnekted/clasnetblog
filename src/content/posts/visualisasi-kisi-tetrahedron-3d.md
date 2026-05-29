@@ -54,15 +54,26 @@ Navigasi ruang 3D dirancang agar sangat intuitif bagi pengguna:
 
 Keunggulan utama dari proyek Tetrahedron 3D Viewer adalah penyediaan **Standalone Version** (Versi Mandiri) di dalam direktori `/3d_lattice_visualization/`.
 
-```
-+------------------------------------------------------------+
-|             3D LATTICE VISUALIZATION (Standalone)          |
-+------------------------------------------------------------+
-|   /frontend/index.html   -> Kanvas 3D WebGL (Three.js)     |
-|   /backend/server.py     -> API FastAPI & WebSocket Server |
-|   /start_python.sh       -> Skrip Startup Cepat            |
-+------------------------------------------------------------+
-```
+<div class="my-8 p-6 rounded-2xl border border-neutral-900 bg-neutral-950/40 backdrop-blur-sm flex flex-col items-center space-y-4 hover:border-neutral-800 transition-colors duration-500 relative overflow-hidden group">
+  <div class="px-4 py-2 rounded-full border border-neutral-850 bg-neutral-900 text-xs font-mono font-bold text-white tracking-widest uppercase">
+    3D LATTICE VISUALIZATION (Standalone)
+  </div>
+  <div class="w-[2px] h-8 bg-neutral-800"></div>
+  <div class="w-full max-w-md space-y-3">
+    <div class="p-3 rounded-lg border border-neutral-900 bg-neutral-950/80 flex items-center justify-between hover:border-neutral-850 transition-colors">
+      <span class="text-xs font-mono text-neutral-300">/frontend/index.html</span>
+      <span class="text-[11px] text-neutral-500 font-sans">Kanvas 3D WebGL (Three.js)</span>
+    </div>
+    <div class="p-3 rounded-lg border border-neutral-900 bg-neutral-950/80 flex items-center justify-between hover:border-neutral-850 transition-colors">
+      <span class="text-xs font-mono text-neutral-300">/backend/server.py</span>
+      <span class="text-[11px] text-neutral-500 font-sans">API FastAPI & WebSocket Server</span>
+    </div>
+    <div class="p-3 rounded-lg border border-neutral-900 bg-neutral-950/80 flex items-center justify-between hover:border-neutral-850 transition-colors">
+      <span class="text-xs font-mono text-neutral-300">/start_python.sh</span>
+      <span class="text-[11px] text-neutral-500 font-sans">Skrip Startup Cepat</span>
+    </div>
+  </div>
+</div>
 
 Dengan desain modular ini, komponen visualizer 3D dapat dicopot dan dijalankan secara independen tanpa ketergantungan pada modul frontend utama. Komunikasi data metrik kestabilan dan kalkulasi spasial dikoordinasikan secara rapi melalui WebSockets dan REST API, memberikan fleksibilitas integrasi yang tinggi bagi pengembang.
 

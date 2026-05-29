@@ -53,16 +53,48 @@ Setiap drone memiliki agen kontrol otonom yang memproses perintah terbang, meman
 
 Inti dari sistem berbasis agen adalah **Close-Loop Control** (Sistem Kontrol Loop Tertutup). Sistem tidak hanya menyajikan data grafis pasif, tetapi dapat mengambil tindakan korektif berdasarkan ambang batas (*thresholds*) yang telah ditentukan:
 
-```
-        +-------------------------------------------------+
-        |                                                 |
-        v                                                 |
-[Sensor Lapangan] ---> (Kirim Telemetri) ---> [FastAPI Server]
-                                                      |
-                                             (Evaluasi Threshold)
-                                                      |
-[Armada Drone] <--- (Kirim Koordinat Misi) <--- [Ambil Tindakan]
-```
+<div class="my-8 p-6 rounded-2xl border border-neutral-900 bg-neutral-950/40 backdrop-blur-sm flex flex-col items-center hover:border-neutral-800 transition-colors duration-500 relative overflow-hidden group">
+  <div class="px-4 py-2 rounded-full border border-neutral-850 bg-neutral-900 text-xs font-mono font-bold text-white tracking-widest uppercase mb-6">
+    LOOP OTOMASI DEVISI PERTANIAN
+  </div>
+  
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-3xl items-center">
+    <!-- Step 1: Sensor Lapangan -->
+    <div class="p-4 rounded-xl border border-neutral-900 bg-neutral-950/80 flex flex-col items-center text-center space-y-1">
+      <span class="text-[9px] font-mono text-neutral-500">TAHAP 1</span>
+      <h4 class="text-xs font-bold text-white">Sensor Lapangan</h4>
+      <p class="text-[10px] text-neutral-400">Deteksi kelembaban tanah & udara secara berkala</p>
+    </div>
+
+    <!-- Arrow 1 to Server -->
+    <div class="flex flex-col items-center text-neutral-600 justify-center">
+      <span class="text-[9px] font-mono text-neutral-500 mb-1">Kirim Telemetri</span>
+      <span class="text-lg md:rotate-0 rotate-90">➔</span>
+    </div>
+
+    <!-- Step 2: FastAPI Server -->
+    <div class="p-4 rounded-xl border border-neutral-900 bg-neutral-950/80 flex flex-col items-center text-center space-y-1">
+      <span class="text-[9px] font-mono text-neutral-500">TAHAP 2</span>
+      <h4 class="text-xs font-bold text-white">FastAPI Server</h4>
+      <p class="text-[10px] text-neutral-400">Evaluasi data terhadap batas threshold kritis</p>
+    </div>
+
+    <!-- Arrow 2 to Action (vertical line connecting) -->
+    <div class="md:col-span-3 flex justify-center text-neutral-600 py-1">
+      <div class="flex flex-col items-center">
+        <span class="text-[9px] font-mono text-neutral-500">Ambil Tindakan</span>
+        <span class="text-lg">↓</span>
+      </div>
+    </div>
+
+    <!-- Step 3: Armada Drone (Bottom row) -->
+    <div class="md:col-start-2 p-4 rounded-xl border border-neutral-900 bg-neutral-950/80 flex flex-col items-center text-center space-y-1">
+      <span class="text-[9px] font-mono text-neutral-500">TAHAP 3</span>
+      <h4 class="text-xs font-bold text-white">Armada Drone</h4>
+      <p class="text-[10px] text-neutral-400">Kirim koordinat GPS & terbang otonom untuk penyiraman</p>
+    </div>
+  </div>
+</div>
 
 Sebagai contoh, jika sensor kelembaban tanah di Zona C (Cabai Rawit) mendeteksi penurunan kelembaban di bawah **25%** (ambang batas kritis untuk cabai rawit), sistem secara otomatis memicu skenario berikut:
 1.  **Evaluasi Status**: Server FastAPI mendeteksi anomali level merah (*Critical Alert*).

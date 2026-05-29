@@ -26,19 +26,65 @@ VPDS dirancang dengan memisahkan fungsi komputasi visi komputer yang berat dari 
 2.  **`VPDS-Vehicle-Parking-Detection-System` (Dasbor Logika & Data)**:
     Antarmuka dasbor monitoring berbasis **PHP & Tailwind CSS** yang menerima telemetri parkir, menghitung durasi, dan memvisualisasikan data statistik dalam bentuk grafik interaktif untuk admin.
 
-```
-+----------------+       (Video Stream)       +-------------------+
-|   ESP32-CAM    |--------------------------->|  Python Flask /   |
-| (Edge Camera)  |                            |  YOLOv8 Engine    |
-+----------------+                            +-------------------+
-        |                                               |
-        | (HTTP POST Telemetry)                         | (Database Sync)
-        v                                               v
-+------------------+     (Query API)          +-------------------+
-| PHP Web Server & |<-------------------------|   MySQL/MariaDB   |
-| Dashboard UI     |                          |   Database        |
-+------------------+                          +-------------------+
-```
+<div class="my-8 p-6 rounded-2xl border border-neutral-900 bg-neutral-950/40 backdrop-blur-sm flex flex-col items-center hover:border-neutral-800 transition-colors duration-500 relative overflow-hidden group">
+  <div class="px-4 py-2 rounded-full border border-neutral-850 bg-neutral-900 text-xs font-mono font-bold text-white tracking-widest uppercase mb-6">
+    ARSITEKTUR INTEGRASI DATA VPDS
+  </div>
+  
+  <div class="w-full max-w-2xl space-y-4">
+    <!-- Row 1: ESP32 and YOLO -->
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
+      <div class="w-full md:w-[45%] p-4 rounded-xl border border-neutral-900 bg-neutral-950/80 flex flex-col items-center text-center space-y-1">
+        <span class="text-[9px] font-mono text-neutral-500 tracking-wider">EDGE</span>
+        <h4 class="text-xs font-bold text-white">ESP32-CAM</h4>
+        <span class="text-[10px] text-neutral-400">Pengambil Gambar & Deteksi Gerak</span>
+      </div>
+      
+      <div class="flex flex-col items-center justify-center text-neutral-600 px-2">
+        <span class="text-[10px] font-mono text-neutral-500 uppercase tracking-widest">Video Stream</span>
+        <span class="text-lg md:rotate-0 rotate-90">➔</span>
+      </div>
+      
+      <div class="w-full md:w-[45%] p-4 rounded-xl border border-neutral-900 bg-neutral-950/80 flex flex-col items-center text-center space-y-1">
+        <span class="text-[9px] font-mono text-neutral-500 tracking-wider">AI ENGINE</span>
+        <h4 class="text-xs font-bold text-white">Python FastAPI & YOLOv8</h4>
+        <span class="text-[10px] text-neutral-400">Deteksi & Tracking Objek GPU</span>
+      </div>
+    </div>
+
+    <!-- Vertical arrows -->
+    <div class="hidden md:flex justify-between px-16 text-neutral-600">
+      <div class="flex flex-col items-center">
+        <span class="text-lg">↓</span>
+        <span class="text-[9px] font-mono text-neutral-500">HTTP POST</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <span class="text-lg">↓</span>
+        <span class="text-[9px] font-mono text-neutral-500">DB Sync</span>
+      </div>
+    </div>
+
+    <!-- Row 2: PHP and MySQL -->
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
+      <div class="w-full md:w-[45%] p-4 rounded-xl border border-neutral-900 bg-neutral-950/80 flex flex-col items-center text-center space-y-1">
+        <span class="text-[9px] font-mono text-neutral-500 tracking-wider">FRONTEND</span>
+        <h4 class="text-xs font-bold text-white">PHP & Tailwind UI Dashboard</h4>
+        <span class="text-[10px] text-neutral-400">Visualisasi Peta LeafletJS & Grafik</span>
+      </div>
+      
+      <div class="flex flex-col items-center justify-center text-neutral-600 px-2">
+        <span class="text-[10px] font-mono text-neutral-500 uppercase tracking-widest">Query API</span>
+        <span class="text-lg md:rotate-0 rotate-90">←</span>
+      </div>
+      
+      <div class="w-full md:w-[45%] p-4 rounded-xl border border-neutral-900 bg-neutral-950/80 flex flex-col items-center text-center space-y-1">
+        <span class="text-[9px] font-mono text-neutral-500 tracking-wider">DATABASE</span>
+        <h4 class="text-xs font-bold text-white">MySQL / MariaDB</h4>
+        <span class="text-[10px] text-neutral-400">Penyimpanan Metrik Telemetri</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
 

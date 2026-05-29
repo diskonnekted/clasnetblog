@@ -79,14 +79,72 @@ Go-LoRa EWS mengatasi hambatan transmisi ini dengan mengadopsi modul komunikasi 
 
 Sistem Peringatan Dini ini bekerja secara end-to-end melalui tahapan berikut:
 
-```
-[ Sensor Node ] --(LoRa RF)--> [ LoRa Gateway ] --(Wi-Fi/4G API)--> [ Go Backend ]
-                                                                          |
-                                                                   +------+------+
-                                                                   |             |
-                                                                   v             v
-                                                            [ GIS Dashboard ] [ Alert System ]
-```
+<div class="my-8 p-6 rounded-2xl border border-neutral-900 bg-neutral-950/40 backdrop-blur-sm flex flex-col items-center hover:border-neutral-800 transition-colors duration-500 relative overflow-hidden group">
+  <div class="px-4 py-2 rounded-full border border-neutral-850 bg-neutral-900 text-xs font-mono font-bold text-white tracking-widest uppercase mb-6">
+    ALUR TRANSMISI TELEMETRI EWS
+  </div>
+  
+  <div class="w-full max-w-2xl space-y-6">
+    <!-- Top Flow Row: Sensor -> Gateway -> Backend -->
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-2">
+      <!-- Sensor Node -->
+      <div class="w-full md:w-[28%] p-3 rounded-lg border border-neutral-900 bg-neutral-950/80 flex flex-col items-center text-center space-y-1">
+        <span class="text-[8px] font-mono text-neutral-500">NODE LAPANGAN</span>
+        <h4 class="text-xs font-bold text-white">Sensor Node</h4>
+        <span class="text-[9px] text-neutral-400">Water / Vibration / Tilt</span>
+      </div>
+
+      <!-- Arrow 1 -->
+      <div class="flex flex-col items-center text-neutral-600">
+        <span class="text-[8px] font-mono text-neutral-500">LoRa RF (Jarak Jauh)</span>
+        <span class="text-base md:rotate-0 rotate-90">➔</span>
+      </div>
+
+      <!-- LoRa Gateway -->
+      <div class="w-full md:w-[28%] p-3 rounded-lg border border-neutral-900 bg-neutral-950/80 flex flex-col items-center text-center space-y-1">
+        <span class="text-[8px] font-mono text-neutral-500">GATEWAY</span>
+        <h4 class="text-xs font-bold text-white">LoRa Gateway</h4>
+        <span class="text-[9px] text-neutral-400">Penerima Sinyal Radio</span>
+      </div>
+
+      <!-- Arrow 2 -->
+      <div class="flex flex-col items-center text-neutral-600">
+        <span class="text-[8px] font-mono text-neutral-500">Wi-Fi/4G API</span>
+        <span class="text-base md:rotate-0 rotate-90">➔</span>
+      </div>
+
+      <!-- Go Backend -->
+      <div class="w-full md:w-[28%] p-3 rounded-lg border border-neutral-900 bg-neutral-950/80 flex flex-col items-center text-center space-y-1">
+        <span class="text-[8px] font-mono text-neutral-500">PEMROSES DATA</span>
+        <h4 class="text-xs font-bold text-white">Go Backend</h4>
+        <span class="text-[9px] text-neutral-400">Ingestion API & Threshold</span>
+      </div>
+    </div>
+
+    <!-- Vertical separator to targets -->
+    <div class="flex flex-col items-center text-neutral-600">
+      <span class="text-lg">↓</span>
+      <span class="text-[8px] font-mono text-neutral-500">Broadcast</span>
+    </div>
+
+    <!-- Bottom Row: GIS and Alerts -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
+      <!-- GIS Dashboard -->
+      <div class="p-3 rounded-lg border border-neutral-900 bg-neutral-950/80 flex flex-col items-center text-center space-y-1">
+        <span class="text-[8px] font-mono text-neutral-500">DASBOR UTAMA</span>
+        <h4 class="text-xs font-bold text-white">GIS Dashboard</h4>
+        <span class="text-[9px] text-neutral-400">Peta Spasial Reaktif (Leaflet JS)</span>
+      </div>
+
+      <!-- Alert System -->
+      <div class="p-3 rounded-lg border border-neutral-900 bg-neutral-950/80 flex flex-col items-center text-center space-y-1">
+        <span class="text-[8px] font-mono text-neutral-500">NOTIFIKASI</span>
+        <h4 class="text-xs font-bold text-white">Alert System</h4>
+        <span class="text-[9px] text-neutral-400">Kirim Alarm & Peringatan Dini</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 1.  **Akuisisi Data**: Sensor mengukur getaran tanah (menggunakan akselerometer) dan ketinggian air (menggunakan ultrasonik/tekanan).
 2.  **Transmisi LoRa**: Modul memancarkan data telemetri terkompresi secara periodik ke Gateway.

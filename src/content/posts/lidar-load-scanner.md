@@ -25,16 +25,45 @@ Untuk mengukur ketinggian muatan dengan presisi tinggi, ESP32-CAM dihubungkan de
 -   **Teknologi Time-of-Flight (ToF)**: VL53L1X memancarkan pulsa laser inframerah tak terlihat dan mengukur waktu yang dibutuhkan cahaya untuk memantul kembali dari permukaan muatan. Metode ini memberikan hasil pengukuran jarak yang sangat akurat hingga jarak 4 meter, tidak terpengaruh oleh warna material atau kondisi cahaya eksternal.
 -   **Koneksi Pin I2C Kustom**: Karena modul ESP32-CAM memiliki pin GPIO terbatas akibat penggunaan jalur data kamera, komunikasi I2C dikonfigurasi secara perangkat lunak (*software I2C*) menggunakan **GPIO 13 (SDA)** dan **GPIO 14 (SCL)**.
 
-```
-+------------------+                    +-------------------+
-|    ESP32-CAM     |                    |   LiDAR VL53L1X   |
-|                  |                    |                   |
-|          GPIO 13 |------------------->| SDA               |
-|          GPIO 14 |------------------->| SCL               |
-|          5V / 3V |------------------->| VCC               |
-|              GND |------------------->| GND               |
-+------------------+                    +-------------------+
-```
+<div class="my-8 p-6 rounded-2xl border border-neutral-900 bg-neutral-950/40 backdrop-blur-sm flex flex-col items-center hover:border-neutral-800 transition-colors duration-500 relative overflow-hidden group">
+  <div class="px-4 py-2 rounded-full border border-neutral-850 bg-neutral-900 text-xs font-mono font-bold text-white tracking-widest uppercase mb-6">
+    SKEMA KONEKSI WIRING PERANGKAT
+  </div>
+  
+  <div class="flex flex-col sm:flex-row items-center justify-between gap-6 sm:gap-12 w-full max-w-lg">
+    <!-- ESP32-CAM Pinout -->
+    <div class="w-full sm:w-[40%] p-4 rounded-xl border border-neutral-900 bg-neutral-950/80 flex flex-col items-center text-center space-y-3">
+      <span class="text-[9px] font-mono text-neutral-500">PENGENDALI</span>
+      <h4 class="text-xs font-bold text-white">ESP32-CAM</h4>
+      <div class="w-full space-y-1 font-mono text-[10px] text-neutral-400">
+        <div class="flex justify-between border-b border-neutral-900 pb-0.5"><span>GPIO 13</span> <span class="text-neutral-600">SDA</span></div>
+        <div class="flex justify-between border-b border-neutral-900 pb-0.5"><span>GPIO 14</span> <span class="text-neutral-600">SCL</span></div>
+        <div class="flex justify-between border-b border-neutral-900 pb-0.5"><span>5V / 3V</span> <span class="text-neutral-600">VCC</span></div>
+        <div class="flex justify-between"><span>GND</span> <span class="text-neutral-600">GND</span></div>
+      </div>
+    </div>
+
+    <!-- Wiring connection lines -->
+    <div class="hidden sm:flex flex-col justify-around h-20 text-neutral-600 w-12 font-mono text-xs">
+      <div class="flex items-center justify-center border-t border-dashed border-neutral-800 w-full">➔</div>
+      <div class="flex items-center justify-center border-t border-dashed border-neutral-800 w-full mt-2">➔</div>
+      <div class="flex items-center justify-center border-t border-dashed border-neutral-800 w-full mt-2">➔</div>
+      <div class="flex items-center justify-center border-t border-dashed border-neutral-800 w-full mt-2">➔</div>
+    </div>
+
+    <!-- LiDAR Pinout -->
+    <div class="w-full sm:w-[40%] p-4 rounded-xl border border-neutral-900 bg-neutral-950/80 flex flex-col items-center text-center space-y-3">
+      <span class="text-[9px] font-mono text-neutral-500">SENSOR DETEKSI</span>
+      <h4 class="text-xs font-bold text-white">LiDAR VL53L1X</h4>
+      <div class="w-full space-y-1 font-mono text-[10px] text-neutral-400">
+        <div class="flex justify-between border-b border-neutral-900 pb-0.5"><span class="text-neutral-600">SDA</span> <span>SDA</span></div>
+        <div class="flex justify-between border-b border-neutral-900 pb-0.5"><span class="text-neutral-600">SCL</span> <span>SCL</span></div>
+        <div class="flex justify-between border-b border-neutral-900 pb-0.5"><span class="text-neutral-600">VCC</span> <span>VCC</span></div>
+        <div class="flex justify-between"><span class="text-neutral-600">GND</span> <span>GND</span></div>
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
 

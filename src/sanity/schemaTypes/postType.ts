@@ -104,6 +104,14 @@ export const postType = defineType({
             { name: "subspace2Title", type: "string" },
             { name: "subspace2Desc", type: "string" }
           ]
+        },
+        {
+          type: "object",
+          name: "htmlBlock",
+          title: "HTML Block",
+          fields: [
+            { name: "html", type: "text", rows: 10 }
+          ]
         }
       ],
     }),

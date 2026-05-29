@@ -36,23 +36,44 @@ Untuk memodelkan dinamika internal dari setiap sel ruang-waktu, teori MMU mendef
 
 Menerjemahkan persamaan diferensial dinamika 4D ke dalam visualisasi browser yang lancar membutuhkan arsitektur sistem yang efisien. Proyek ini mengimplementasikan pendekatan **Dual-Backend** dengan pembagian kerja sebagai berikut:
 
-```
-+-------------------------------------------------------------+
-|                        KLIEN (Browser)                      |
-|  - UI Dashboard Modern (Tailwind CSS)                       |
-|  - Visualisasi Grafik Gelombang Real-Time (Chart.js)        |
-|  - Kontrol Parameter Interaktif (Noise, Coupling, dll.)     |
-+------------------------------+------------------------------+
-                               |
-                        (WebSockets / HTTP)
-                               |
-                               v
-+------------------------------+------------------------------+
-|                        SERVER BACKEND                       |
-|  - Opsi A: Python (FastAPI) -> Mesin Fisika Integrator ODE   |
-|  - Opsi B: PHP (Alternatif) -> Polling Data State           |
-+-------------------------------------------------------------+
-```
+<div class="my-8 p-6 rounded-2xl border border-neutral-900 bg-neutral-950/40 backdrop-blur-sm flex flex-col items-center hover:border-neutral-800 transition-colors duration-500 relative overflow-hidden group">
+  <div class="px-4 py-2 rounded-full border border-neutral-850 bg-neutral-900 text-xs font-mono font-bold text-white tracking-widest uppercase mb-6">
+    ARSITEKTUR MESIN FISIKA REAL-TIME
+  </div>
+  
+  <div class="w-full max-w-lg space-y-4">
+    <!-- Client -->
+    <div class="p-5 rounded-xl border border-neutral-900 bg-neutral-950/80 space-y-3">
+      <div class="flex items-center justify-between border-b border-neutral-900 pb-2">
+        <h4 class="text-xs font-bold text-white uppercase tracking-wider">KLIEN (Browser)</h4>
+        <span class="text-[9px] font-mono text-neutral-500">Frontend Layer</span>
+      </div>
+      <ul class="text-xs text-neutral-400 space-y-1.5 list-disc pl-4">
+        <li>UI Dashboard Modern (Tailwind CSS)</li>
+        <li>Visualisasi Grafik Gelombang Real-Time (Chart.js)</li>
+        <li>Kontrol Parameter Interaktif (Noise, Coupling, dll.)</li>
+      </ul>
+    </div>
+
+    <!-- Connection Line -->
+    <div class="flex flex-col items-center justify-center text-neutral-600 py-1">
+      <span class="text-[10px] font-mono text-neutral-500 uppercase tracking-widest">WebSockets / HTTP (Low Latency)</span>
+      <span class="text-lg">↓</span>
+    </div>
+
+    <!-- Server Backend -->
+    <div class="p-5 rounded-xl border border-neutral-900 bg-neutral-950/80 space-y-3">
+      <div class="flex items-center justify-between border-b border-neutral-900 pb-2">
+        <h4 class="text-xs font-bold text-white uppercase tracking-wider">SERVER BACKEND</h4>
+        <span class="text-[9px] font-mono text-neutral-500">Physics & Processing Layer</span>
+      </div>
+      <ul class="text-xs text-neutral-400 space-y-1.5 list-disc pl-4">
+        <li><strong>Opsi A (Python FastAPI)</strong>: Mesin Fisika Integrator ODE (Utama)</li>
+        <li><strong>Opsi B (PHP Alternatif)</strong>: Polling Data State (Fallback)</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 ### 1. Python (FastAPI) sebagai Mesin Utama
 Di sisi server, Python dengan framework FastAPI bertindak sebagai mesin fisika utama. Ia memecahkan persamaan gerakan osilasi berpasangan (*coupled oscillation equations*) menggunakan pustaka matematika untuk memperbarui posisi dan kecepatan partikel pada setiap *time-step*. 

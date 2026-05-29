@@ -25,18 +25,63 @@ Dalam psikologi desain UX, Hukum Hick menyatakan bahwa waktu yang dibutuhkan unt
 -   **Skema Warna Adaptif**: Kontras teks dan latar belakang diatur secara presisi dengan palet warna abu-abu netral dan aksen indigo yang tidak melelahkan mata editor yang bekerja berjam-jam di depan layar.
 -   **Desain Mobile-Responsive**: Struktur dasbor yang sepenuhnya responsif memastikan pengelola toko online atau editor berita dapat menerbitkan artikel baru dengan nyaman langsung dari layar smartphone mereka.
 
-```
-       WordPress / Legacy CMS Dasbor                  Orion CMS Dasbor
-  (Banyak menu, widget rumit, padat)            (Fokus, bersih, minimalis)
-       
-  +---------------------------------+          +-----------------------------+
-  |  Menu  | [Widget] [Widget]      |          | Menu | [Status Ringkasan]   |
-  |  Menu  | [Widget] [Widget]      |          |------+----------------------|
-  |  Menu  | [Dashboard Stats]      |          | Post |                      |
-  |  Menu  | [Updates] [Events]     |          | Page |  [Area Kerja Utama]  |
-  |  Menu  | [Quick Drafts]         |          | Media|                      |
-  +---------------------------------+          +-----------------------------+
-```
+<div class="my-8 p-6 rounded-2xl border border-neutral-900 bg-neutral-950/40 backdrop-blur-sm flex flex-col items-center hover:border-neutral-800 transition-colors duration-500 relative overflow-hidden group">
+  <div class="px-4 py-2 rounded-full border border-neutral-850 bg-neutral-900 text-xs font-mono font-bold text-white tracking-widest uppercase mb-6">
+    PERBANDINGAN STRUKTUR DASBOR
+  </div>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-3xl">
+    <!-- Legacy WordPress -->
+    <div class="space-y-3">
+      <div class="text-center">
+        <h4 class="text-xs font-bold text-neutral-400">WordPress / Legacy CMS</h4>
+        <span class="text-[9px] font-mono text-neutral-600">Widget rumit, padat, kognitif tinggi</span>
+      </div>
+      <div class="border border-neutral-900 bg-neutral-950/60 rounded-xl p-3 h-48 flex font-mono text-[9px] text-neutral-500">
+        <div class="w-1/4 border-r border-neutral-900 pr-2 space-y-1">
+          <div class="bg-neutral-900 px-1 py-0.5 rounded text-neutral-400">Dasbor</div>
+          <div class="px-1">Pos</div>
+          <div class="px-1">Media</div>
+          <div class="px-1">Laman</div>
+          <div class="px-1">Komentar</div>
+          <div class="px-1">Tampilan</div>
+          <div class="px-1">Plugin</div>
+        </div>
+        <div class="w-3/4 pl-2 grid grid-cols-2 gap-1.5 content-start">
+          <div class="border border-neutral-900 bg-neutral-950/80 p-1.5 rounded h-10">Widget Aktivitas</div>
+          <div class="border border-neutral-900 bg-neutral-950/80 p-1.5 rounded h-10">Draf Cepat</div>
+          <div class="border border-neutral-900 bg-neutral-950/80 p-1.5 rounded h-10 col-span-2">Statistik Kunjungan Jetpack</div>
+          <div class="border border-neutral-900 bg-neutral-950/80 p-1.5 rounded h-8 col-span-2">Berita & Acara WordPress</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Orion CMS -->
+    <div class="space-y-3">
+      <div class="text-center">
+        <h4 class="text-xs font-bold text-white">Orion CMS</h4>
+        <span class="text-[9px] font-mono text-neutral-400">Fokus, bersih, beban kognitif rendah</span>
+      </div>
+      <div class="border border-neutral-850 bg-neutral-950/80 rounded-xl p-3 h-48 flex font-mono text-[9px] text-neutral-400">
+        <div class="w-1/5 border-r border-neutral-850 pr-2 space-y-2">
+          <div class="text-neutral-500 font-bold">MENU</div>
+          <div class="bg-neutral-900 px-1 py-0.5 rounded text-white font-semibold">Post</div>
+          <div class="px-1">Page</div>
+          <div class="px-1">Media</div>
+        </div>
+        <div class="w-4/5 pl-3 flex flex-col space-y-2">
+          <div class="border border-neutral-850 bg-neutral-900/60 p-2 rounded flex justify-between items-center">
+            <span class="font-bold text-white">STATUS RINGKASAN</span>
+            <span class="text-emerald-500">Live</span>
+          </div>
+          <div class="border border-neutral-850 bg-neutral-900/30 p-4 rounded flex-1 flex items-center justify-center text-center text-neutral-500 border-dashed">
+            [ Area Kerja Utama Editor ]
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
 

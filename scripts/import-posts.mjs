@@ -235,8 +235,8 @@ function markdownToPortableText(markdown) {
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
 
-    if (line.trim().startsWith('<div class="my-8')) {
-      // Consuming HTML block for State Space Schema
+    if (line.trim().startsWith('<div')) {
+      // Consuming HTML block as generic htmlBlock
       let htmlContent = [];
       let depth = 1;
       htmlContent.push(line);
@@ -259,25 +259,10 @@ function markdownToPortableText(markdown) {
       
       const htmlText = htmlContent.join('\n');
       
-      // Extract values using regex
-      const titleMatch = htmlText.match(/tracking-wide">\s*([\s\S]*?)\s*<\/div>/);
-      const h4Matches = [...htmlText.matchAll(/font-bold text-white">\s*([\s\S]*?)\s*<\/h4>/g)];
-      const pMatches = [...htmlText.matchAll(/text-neutral-400">\s*([\s\S]*?)\s*<\/p>/g)];
-      
-      const title = titleMatch ? titleMatch[1].trim() : "RUANG KEADAAN 9 DIMENSI (9D)";
-      const subspace1Title = h4Matches[0] ? h4Matches[0][1].trim() : "Sumbu Fisik 4D (Tetrahedron)";
-      const subspace1Desc = pMatches[0] ? pMatches[0][1].trim() : "Getaran Kisi Ruang-Waktu (w1-w4)";
-      const subspace2Title = h4Matches[1] ? h4Matches[1][1].trim() : "Sumbu Informasi 5D (Pentachoron)";
-      const subspace2Desc = pMatches[1] ? pMatches[1][1].trim() : "State Integrasi Kognitif (s1-s5)";
-      
       blocks.push({
         _key: 'b_' + Math.random().toString(36).substring(2, 11),
-        _type: 'stateSpaceSchema',
-        title,
-        subspace1Title,
-        subspace1Desc,
-        subspace2Title,
-        subspace2Desc
+        _type: 'htmlBlock',
+        html: htmlText
       });
       continue;
     }

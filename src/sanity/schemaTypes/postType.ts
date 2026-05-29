@@ -93,6 +93,18 @@ export const postType = defineType({
           type: "image",
           options: { hotspot: true },
         },
+        {
+          type: "object",
+          name: "stateSpaceSchema",
+          title: "State Space Schema",
+          fields: [
+            { name: "title", type: "string" },
+            { name: "subspace1Title", type: "string" },
+            { name: "subspace1Desc", type: "string" },
+            { name: "subspace2Title", type: "string" },
+            { name: "subspace2Desc", type: "string" }
+          ]
+        }
       ],
     }),
     defineField({

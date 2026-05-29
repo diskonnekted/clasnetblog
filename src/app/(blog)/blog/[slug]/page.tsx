@@ -53,6 +53,28 @@ const portableTextComponents = {
         </div>
       );
     },
+    stateSpaceSchema: ({ value }: any) => {
+      return (
+        <div className="my-8 p-6 rounded-2xl border border-neutral-900 bg-neutral-950/40 backdrop-blur-sm flex flex-col items-center space-y-4 hover:border-neutral-800 transition-colors duration-500 relative overflow-hidden group">
+          <div className="px-4 py-2 rounded-full border border-neutral-850 bg-neutral-900 text-xs font-mono font-bold text-white tracking-widest uppercase">
+            {value.title || "RUANG KEADAAN 9 DIMENSI (9D)"}
+          </div>
+          <div className="w-[2px] h-8 bg-neutral-800" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+            <div className="p-5 rounded-xl border border-neutral-900 bg-neutral-950/80 hover:bg-neutral-900/40 hover:border-neutral-850/80 transition-all duration-300 flex flex-col items-center text-center space-y-3 relative overflow-hidden group/sub">
+              <span className="text-[10px] font-mono text-neutral-500 uppercase tracking-widest bg-neutral-900/50 px-2.5 py-1 rounded-md border border-neutral-850/60">SUB-RUANG 1</span>
+              <h4 className="text-sm font-bold text-white tracking-tight">{value.subspace1Title || "Sumbu Fisik 4D (Tetrahedron)"}</h4>
+              <p className="text-xs text-neutral-400 leading-relaxed max-w-[240px]">{value.subspace1Desc || "Getaran Kisi Ruang-Waktu (w1-w4)"}</p>
+            </div>
+            <div className="p-5 rounded-xl border border-neutral-900 bg-neutral-950/80 hover:bg-neutral-900/40 hover:border-neutral-850/80 transition-all duration-300 flex flex-col items-center text-center space-y-3 relative overflow-hidden group/sub">
+              <span className="text-[10px] font-mono text-neutral-500 uppercase tracking-widest bg-neutral-900/50 px-2.5 py-1 rounded-md border border-neutral-850/60">SUB-RUANG 2</span>
+              <h4 className="text-sm font-bold text-white tracking-tight">{value.subspace2Title || "Sumbu Informasi 5D (Pentachoron)"}</h4>
+              <p className="text-xs text-neutral-400 leading-relaxed max-w-[240px]">{value.subspace2Desc || "State Integrasi Kognitif (s1-s5)"}</p>
+            </div>
+          </div>
+        </div>
+      );
+    },
   },
   block: {
     h2: ({ children }: any) => <h2 className="text-xl md:text-2xl font-semibold text-white mt-10 mb-4 tracking-tight">{children}</h2>,

@@ -21,7 +21,7 @@ export default async function Home() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative z-10 max-w-6xl mx-auto px-6 pt-28 pb-10 w-full flex flex-col items-start text-left">
+      <section className="relative z-10 max-w-6xl mx-auto px-6 pt-28 pb-16 w-full flex flex-col items-start text-left">
         {/* Hero Title */}
         <h1 className="text-4xl md:text-6xl font-semibold tracking-tighter text-white mb-6 max-w-3xl leading-[1.1] text-gradient">
           Jurnal Pembangunan Produk <br />
@@ -52,97 +52,106 @@ export default async function Home() {
       </section>
 
       {/* A New Species of Tech Journal Section */}
-      <section className="relative z-10 max-w-6xl mx-auto px-6 py-20 w-full border-b border-neutral-900">
-        {/* Headline */}
-        <h2 className="text-2xl md:text-4xl font-semibold tracking-tighter leading-tight max-w-4xl text-neutral-400 mb-16">
-          <span className="text-white">Spesies baru jurnal teknologi.</span> Dirancang khusus untuk kreator produk dengan rekayasa sistem modern, ClasnetBlog menetapkan standar baru dalam mendokumentasikan pemikiran, desain, dan arsitektur produk.
-        </h2>
+      <section className="relative z-10 max-w-6xl mx-auto px-6 py-12 w-full">
+        <div className="border border-card-border bg-neutral-950/30 backdrop-blur-sm rounded-2xl p-8 md:p-12 shadow-2xl relative overflow-hidden group">
+          {/* Subtle grid background inside the card */}
+          <div className="absolute inset-0 grid-bg opacity-[0.03] pointer-events-none" />
+          
+          {/* Subtle glows inside the card */}
+          <div className="absolute -top-24 -left-24 w-48 h-48 rounded-full bg-white/[0.02] blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-24 -right-24 w-48 h-48 rounded-full bg-white/[0.01] blur-3xl pointer-events-none" />
+          
+          {/* Headline */}
+          <h2 className="text-2xl md:text-4xl font-semibold tracking-tighter leading-tight max-w-4xl text-neutral-400 mb-16 relative z-10">
+            <span className="text-white">Spesies baru jurnal teknologi.</span> Dirancang khusus untuk kreator produk dengan rekayasa sistem modern, ClasnetBlog menetapkan standar baru dalam mendokumentasikan pemikiran, desain, dan arsitektur produk.
+          </h2>
 
-        {/* 3 Column Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
-          {/* Column 1 */}
-          <div className="flex flex-col space-y-6 md:border-r md:border-neutral-900 md:pr-10 lg:pr-12">
-            <span className="text-[10px] font-mono text-neutral-600 uppercase tracking-widest">
-              FIG 1.0
-            </span>
-            <div className="h-40 flex items-center justify-start text-neutral-500 hover:text-white transition-colors duration-300">
-              <svg viewBox="0 0 100 100" className="w-32 h-32 stroke-current fill-none">
-                <g strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M50 25 L80 40 L50 55 L20 40 Z" />
-                  <ellipse cx="50" cy="40" rx="15" ry="7.5" />
-                  <path d="M20 45 L50 60 L80 45" />
-                  <path d="M20 50 L50 65 L80 50" />
-                  <path d="M20 55 L50 70 L80 55" />
-                  <path d="M20 60 L50 75 L80 60" />
-                  <line x1="20" y1="40" x2="20" y2="60" />
-                  <line x1="50" y1="55" x2="50" y2="75" />
-                  <line x1="80" y1="40" x2="80" y2="60" />
-                </g>
-              </svg>
+          {/* 3 Column Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16 relative z-10">
+            {/* Column 1 */}
+            <div className="flex flex-col space-y-6 md:border-r md:border-neutral-900 md:pr-10 lg:pr-12">
+              <span className="text-[10px] font-mono text-neutral-600 uppercase tracking-widest">
+                FIG 1.0
+              </span>
+              <div className="h-48 flex items-center justify-start text-neutral-500 hover:text-white transition-colors duration-300">
+                <svg viewBox="0 0 100 100" className="w-44 h-44 stroke-current fill-none">
+                  <g strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M50 25 L80 40 L50 55 L20 40 Z" />
+                    <ellipse cx="50" cy="40" rx="15" ry="7.5" />
+                    <path d="M20 45 L50 60 L80 45" />
+                    <path d="M20 50 L50 65 L80 50" />
+                    <path d="M20 55 L50 70 L80 55" />
+                    <path d="M20 60 L50 75 L80 60" />
+                    <line x1="20" y1="40" x2="20" y2="60" />
+                    <line x1="50" y1="55" x2="50" y2="75" />
+                    <line x1="80" y1="40" x2="80" y2="60" />
+                  </g>
+                </svg>
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-sm font-semibold text-white">Kajian AI-First</h3>
+                <p className="text-xs text-neutral-500 leading-relaxed">
+                  Menjelajahi arsitektur masa depan yang didukung oleh Model Context Protocol (MCP) dan integrasi agen AI mandiri di dalam sistem.
+                </p>
+              </div>
             </div>
-            <div className="space-y-2">
-              <h3 className="text-sm font-semibold text-white">Kajian AI-First</h3>
-              <p className="text-xs text-neutral-500 leading-relaxed">
-                Menjelajahi arsitektur masa depan yang didukung oleh Model Context Protocol (MCP) dan integrasi agen AI mandiri di dalam sistem.
-              </p>
-            </div>
-          </div>
 
-          {/* Column 2 */}
-          <div className="flex flex-col space-y-6 md:border-r md:border-neutral-900 md:pr-10 lg:pr-12">
-            <span className="text-[10px] font-mono text-neutral-600 uppercase tracking-widest">
-              FIG 2.0
-            </span>
-            <div className="h-40 flex items-center justify-start text-neutral-500 hover:text-white transition-colors duration-300">
-              <svg viewBox="0 0 100 100" className="w-32 h-32 stroke-current fill-none">
-                <g strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
-                  {/* Box 1 (back) */}
-                  <path d="M45 25 L65 15 L85 25 L65 35 Z" />
-                  <path d="M45 25 L45 42 L65 52 L65 35 Z" />
-                  <path d="M85 25 L85 42 L65 52" />
-                  
-                  {/* Box 2 (front right) */}
-                  <path d="M60 48 L75 40 L90 48 L75 56 Z" />
-                  <path d="M60 48 L60 62 L75 70 L75 56 Z" />
-                  <path d="M90 48 L90 62 L75 70" />
+            {/* Column 2 */}
+            <div className="flex flex-col space-y-6 md:border-r md:border-neutral-900 md:pr-10 lg:pr-12">
+              <span className="text-[10px] font-mono text-neutral-600 uppercase tracking-widest">
+                FIG 2.0
+              </span>
+              <div className="h-48 flex items-center justify-start text-neutral-500 hover:text-white transition-colors duration-300">
+                <svg viewBox="0 0 100 100" className="w-44 h-44 stroke-current fill-none">
+                  <g strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
+                    {/* Box 1 (back) */}
+                    <path d="M45 25 L65 15 L85 25 L65 35 Z" />
+                    <path d="M45 25 L45 42 L65 52 L65 35 Z" />
+                    <path d="M85 25 L85 42 L65 52" />
+                    
+                    {/* Box 2 (front right) */}
+                    <path d="M60 48 L75 40 L90 48 L75 56 Z" />
+                    <path d="M60 48 L60 62 L75 70 L75 56 Z" />
+                    <path d="M90 48 L90 62 L75 70" />
 
-                  {/* Box 3 (front left) */}
-                  <path d="M22 42 L37 34 L52 42 L37 50 Z" />
-                  <path d="M22 42 L22 56 L37 64 L37 50 Z" />
-                  <path d="M52 42 L52 56 L37 64" />
-                </g>
-              </svg>
+                    {/* Box 3 (front left) */}
+                    <path d="M22 42 L37 34 L52 42 L37 50 Z" />
+                    <path d="M22 42 L22 56 L37 64 L37 50 Z" />
+                    <path d="M52 42 L52 56 L37 64" />
+                  </g>
+                </svg>
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-sm font-semibold text-white">Filosofi Kecepatan</h3>
+                <p className="text-xs text-neutral-500 leading-relaxed">
+                  Menganalisis teknik interaksi mikro, optimistik UI, dan data caching lokal untuk menyajikan antarmuka pengguna yang secepat kilat.
+                </p>
+              </div>
             </div>
-            <div className="space-y-2">
-              <h3 className="text-sm font-semibold text-white">Filosofi Kecepatan</h3>
-              <p className="text-xs text-neutral-500 leading-relaxed">
-                Menganalisis teknik interaksi mikro, optimistik UI, dan data caching lokal untuk menyajikan antarmuka pengguna yang secepat kilat.
-              </p>
-            </div>
-          </div>
 
-          {/* Column 3 */}
-          <div className="flex flex-col space-y-6">
-            <span className="text-[10px] font-mono text-neutral-600 uppercase tracking-widest">
-              FIG 3.0
-            </span>
-            <div className="h-40 flex items-center justify-start text-neutral-500 hover:text-white transition-colors duration-300">
-              <svg viewBox="0 0 100 100" className="w-32 h-32 stroke-current fill-none">
-                <g strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M65 20 L90 30 L90 65 L65 55 Z" />
-                  <path d="M58 25 L83 35 L83 70 M83 35 L58 25" />
-                  <path d="M51 30 L76 40 L76 75 M76 40 L51 30" />
-                  <path d="M44 35 L69 45 L69 80 M69 45 L44 35" />
-                  <path d="M37 40 L62 50 L62 85 M62 50 L37 40" />
-                  <path d="M30 45 L55 55 L55 90 M55 55 L30 45" />
-                </g>
-              </svg>
-            </div>
-            <div className="space-y-2">
-              <h3 className="text-sm font-semibold text-white">Akurasi Arsitektur</h3>
-              <p className="text-xs text-neutral-500 leading-relaxed">
-                Membedah transisi ke native ESM, performa bundling edge, serta optimalisasi pemuatan halaman statis untuk efisiensi tak tertandingi.
-              </p>
+            {/* Column 3 */}
+            <div className="flex flex-col space-y-6">
+              <span className="text-[10px] font-mono text-neutral-600 uppercase tracking-widest">
+                FIG 3.0
+              </span>
+              <div className="h-48 flex items-center justify-start text-neutral-500 hover:text-white transition-colors duration-300">
+                <svg viewBox="0 0 100 100" className="w-44 h-44 stroke-current fill-none">
+                  <g strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M65 20 L90 30 L90 65 L65 55 Z" />
+                    <path d="M58 25 L83 35 L83 70 M83 35 L58 25" />
+                    <path d="M51 30 L76 40 L76 75 M76 40 L51 30" />
+                    <path d="M44 35 L69 45 L69 80 M69 45 L44 35" />
+                    <path d="M37 40 L62 50 L62 85 M62 50 L37 40" />
+                    <path d="M30 45 L55 55 L55 90 M55 55 L30 45" />
+                  </g>
+                </svg>
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-sm font-semibold text-white">Akurasi Arsitektur</h3>
+                <p className="text-xs text-neutral-500 leading-relaxed">
+                  Membedah transisi ke native ESM, performa bundling edge, serta optimalisasi pemuatan halaman statis untuk efisiensi tak tertandingi.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -166,7 +175,7 @@ export default async function Home() {
           </div>
           
           <Link href={`/blog/${featuredPost.slug}`} className="block">
-            <Card className="hover:border-neutral-750 group">
+            <Card className="group">
               <div className="flex flex-col">
                 {/* Visual Graphics Block (Linear Aesthetic Cover Image) */}
                 <div className="w-full h-64 md:h-[450px] relative overflow-hidden bg-neutral-950 border-b border-border-subtle flex items-center justify-center">
@@ -276,7 +285,7 @@ export default async function Home() {
                   {catPosts.length > 0 ? (
                     catPosts.map((post) => (
                       <Link href={`/blog/${post.slug}`} key={post.slug} className="block">
-                        <Card className="hover:border-neutral-750 p-4">
+                        <Card className="p-4">
                           <div className="flex flex-col space-y-3">
                             {post.coverImage && (
                               /* eslint-disable-next-line @next/next/no-img-element */

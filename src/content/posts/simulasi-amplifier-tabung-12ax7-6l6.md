@@ -39,12 +39,12 @@ Untuk menghadirkan pendaran fisik filamen tabung vakum, simulator ini mengadopsi
       <!-- Glass Tube Body -->
       <div class="w-16 h-28 rounded-full border border-white/10 bg-white/5 flex flex-col items-center justify-center relative shadow-[inset_0_0_12px_rgba(255,255,255,0.05)]">
         <!-- Glowing Filament -->
-        <div class="absolute w-2 h-16 bg-gradient-to-b from-orange-500 to-amber-600 rounded-full blur-[3px] opacity-75 group-hover/tube:scale-y-110 transition-transform duration-500" />
+        <div class="absolute w-2 h-16 bg-gradient-to-b from-orange-500 to-amber-600 rounded-full blur-[3px] opacity-75 group-hover/tube:scale-y-110 transition-transform duration-500"></div>
         <!-- Grid Plate Lines -->
         <div class="w-8 h-20 border-x border-dashed border-white/20 z-10 flex flex-col justify-around py-2">
-          <div class="h-[1px] bg-white/20 w-full" />
-          <div class="h-[1px] bg-white/20 w-full" />
-          <div class="h-[1px] bg-white/20 w-full" />
+          <div class="h-[1px] bg-white/20 w-full"></div>
+          <div class="h-[1px] bg-white/20 w-full"></div>
+          <div class="h-[1px] bg-white/20 w-full"></div>
         </div>
       </div>
       <span class="text-[10px] font-mono font-bold text-neutral-400 mt-3 bg-neutral-900 px-2 py-0.5 rounded border border-neutral-850">Preamp Gain</span>
@@ -56,12 +56,12 @@ Untuk menghadirkan pendaran fisik filamen tabung vakum, simulator ini mengadopsi
       <!-- Glass Tube Body (Fat shape) -->
       <div class="w-20 h-28 rounded-3xl border border-white/10 bg-white/5 flex flex-col items-center justify-center relative shadow-[inset_0_0_12px_rgba(255,255,255,0.05)]">
         <!-- Glowing Filament -->
-        <div class="absolute w-3.5 h-16 bg-gradient-to-b from-orange-600 to-amber-600 rounded-full blur-[4px] opacity-80 group-hover/tube:scale-y-110 transition-transform duration-500" />
+        <div class="absolute w-3.5 h-16 bg-gradient-to-b from-orange-600 to-amber-600 rounded-full blur-[4px] opacity-80 group-hover/tube:scale-y-110 transition-transform duration-500"></div>
         <!-- Grid Plate Lines -->
         <div class="w-12 h-20 border-x border-dashed border-white/20 z-10 flex flex-col justify-around py-2">
-          <div class="h-[1px] bg-white/20 w-full" />
-          <div class="h-[1px] bg-white/20 w-full" />
-          <div class="h-[1px] bg-white/20 w-full" />
+          <div class="h-[1px] bg-white/20 w-full"></div>
+          <div class="h-[1px] bg-white/20 w-full"></div>
+          <div class="h-[1px] bg-white/20 w-full"></div>
         </div>
       </div>
       <span class="text-[10px] font-mono font-bold text-neutral-400 mt-3 bg-neutral-900 px-2 py-0.5 rounded border border-neutral-850">Power Amp Drive</span>

@@ -39,48 +39,48 @@ Dengan menggabungkan beberapa trioda 12AX7 bersama jaringan resistor dan kapasit
     <!-- Supply -->
     <div class="flex flex-col items-center space-y-1">
       <span class="px-2 py-0.5 rounded bg-red-950/50 border border-red-900/50 text-[10px] font-mono text-red-400">+B (+150V DC)</span>
-      <div class="w-[1px] h-4 bg-neutral-800" />
+      <div class="w-[1px] h-4 bg-neutral-800"></div>
     </div>
 
     <!-- Resistor -->
     <div class="border border-neutral-800 bg-neutral-900 px-3 py-1 rounded text-[10px] font-mono text-neutral-400">
       [Rp] Resistor Anoda
     </div>
-    <div class="w-[1px] h-4 bg-neutral-800" />
+    <div class="w-[1px] h-4 bg-neutral-800"></div>
 
     <!-- Node & Triode -->
     <div class="w-full flex items-center justify-center">
       <!-- Input Grid -->
       <div class="flex items-center space-x-1.5">
         <span class="text-[10px] font-mono text-neutral-400 bg-neutral-900 px-1.5 py-0.5 rounded border border-neutral-850">Input Grid (Vg)</span>
-        <div class="h-[1px] w-6 bg-neutral-800" />
+        <div class="h-[1px] w-6 bg-neutral-800"></div>
       </div>
 
       <!-- Connection node -->
       <div class="w-2 h-2 rounded-full bg-white relative">
-        <div class="absolute left-full top-1/2 -translate-y-1/2 h-[1px] w-12 bg-neutral-800" />
+        <div class="absolute left-full top-1/2 -translate-y-1/2 h-[1px] w-12 bg-neutral-800"></div>
         <!-- Output -->
         <span class="absolute left-14 top-1/2 -translate-y-1/2 text-[10px] font-mono text-white bg-neutral-900 px-1.5 py-0.5 rounded border border-neutral-850 whitespace-nowrap">Output Anoda (Vo)</span>
       </div>
 
       <!-- Triode Symbol -->
       <div class="ml-4 w-12 h-12 rounded-full border border-white/20 bg-white/5 flex items-center justify-center relative shadow-[inset_0_0_6px_rgba(255,255,255,0.05)]">
-        <div class="w-[1px] h-8 bg-white/20 absolute" />
-        <div class="w-4 h-[1px] bg-white/40 absolute" />
+        <div class="w-[1px] h-8 bg-white/20 absolute"></div>
+        <div class="w-4 h-[1px] bg-white/40 absolute"></div>
         <span class="text-[8px] font-mono text-neutral-500 absolute -bottom-3">TRIODE</span>
       </div>
     </div>
 
     <!-- Katoda to Ground -->
     <div class="flex flex-col items-center">
-      <div class="w-[1px] h-4 bg-neutral-800" />
+      <div class="w-[1px] h-4 bg-neutral-800"></div>
       <span class="text-[10px] font-mono text-neutral-500 italic">Katoda -> Ground</span>
-      <div class="w-[1px] h-2 bg-neutral-800" />
+      <div class="w-[1px] h-2 bg-neutral-800"></div>
       <!-- Ground symbol -->
       <div class="flex flex-col items-center">
-        <div class="w-4 h-[1px] bg-neutral-500" />
-        <div class="w-2 h-[1px] bg-neutral-500 mt-[2px]" />
-        <div class="w-1 h-[1px] bg-neutral-500 mt-[2px]" />
+        <div class="w-4 h-[1px] bg-neutral-500"></div>
+        <div class="w-2 h-[1px] bg-neutral-500 mt-[2px]"></div>
+        <div class="w-1 h-[1px] bg-neutral-500 mt-[2px]"></div>
         <span class="text-[9px] font-mono text-neutral-600 mt-1">GND</span>
       </div>
     </div>

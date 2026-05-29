@@ -86,6 +86,12 @@ export async function getCategoriesData(): Promise<CategoryData[]> {
       tagline: "Integrasi perangkat keras pintar, sistem sensor terdistribusi, dan otomasi lapangan.",
       slugs: [],
     },
+    {
+      id: "6.0",
+      name: "AI Art",
+      tagline: "Eksplorasi sinergi kreativitas manusia dan kecerdasan buatan dalam seni visual dan musik.",
+      slugs: ["anne-bloom-ai-music-phenomenon"],
+    },
   ];
 }
 

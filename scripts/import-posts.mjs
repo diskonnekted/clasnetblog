@@ -99,6 +99,12 @@ const CATEGORY_MAP = {
     title: "Embedded & IoT", 
     number: "5.0", 
     description: "Integrasi perangkat keras pintar, sistem sensor terdistribusi, dan otomasi lapangan." 
+  },
+  "AI Art": { 
+    _id: "category-ai-art", 
+    title: "AI Art", 
+    number: "6.0", 
+    description: "Eksplorasi sinergi kreativitas manusia dan kecerdasan buatan dalam seni visual dan musik." 
   }
 };
 
@@ -107,7 +113,8 @@ const CATEGORY_ALIASES = {
   "Design": "Desain UX",
   "Engineering": "Rekayasa Frontend",
   "Simulasi": "Simulasi & Komputasi",
-  "IoT": "Embedded & IoT"
+  "IoT": "Embedded & IoT",
+  "Art": "AI Art"
 };
 
 // Helper to slugify string

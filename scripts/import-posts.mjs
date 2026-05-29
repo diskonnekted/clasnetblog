@@ -217,6 +217,7 @@ function parseParagraphToBlock(text, style = 'normal') {
   }
 
   return {
+    _key: 'b_' + Math.random().toString(36).substring(2, 11),
     _type: 'block',
     style: style,
     children: children,

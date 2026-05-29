@@ -1,8 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getPostData, getSortedPostsData } from "@/lib/posts";
+import { getPostData, getSortedPostsData, getCategoriesData } from "@/lib/posts";
 import Card from "@/components/Card";
-import ShareButton from "@/components/ShareButton";
 import { PortableText } from "@portabletext/react";
 import { urlFor } from "@/lib/sanity";
 
@@ -60,6 +59,7 @@ export async function generateStaticParams() {
 export default async function BlogPostPage({ params }: PageProps) {
   const { slug } = await params;
   const post = await getPostData(slug);
+  const categories = await getCategoriesData();
 
   if (!post) {
     notFound();
@@ -139,18 +139,26 @@ export default async function BlogPostPage({ params }: PageProps) {
           {/* Sidebar (Desktop only) */}
           <aside className="hidden lg:block lg:col-span-3">
             <div className="sticky top-24 space-y-8">
-              {/* Quick links / share */}
-              <div className="border border-border-subtle bg-card-bg backdrop-blur p-4 rounded-xl flex flex-col space-y-4">
-                <h4 className="text-xs font-semibold uppercase text-neutral-400">
-                  Tindakan
+              {/* Categories list */}
+              <div className="border border-border-subtle bg-card-bg backdrop-blur p-5 rounded-xl flex flex-col space-y-4">
+                <h4 className="text-xs font-mono font-bold uppercase tracking-wider text-neutral-400 border-b border-neutral-900 pb-2">
+                  Kategori
                 </h4>
-                <ShareButton />
-                <Link
-                  href="/#newsletter"
-                  className="text-xs text-neutral-500 hover:text-white transition-colors"
-                >
-                  Berlangganan berita →
-                </Link>
+                <ul className="flex flex-col space-y-3">
+                  {categories.map((cat) => (
+                    <li key={cat.id}>
+                      <Link
+                        href="/#categories"
+                        className="text-xs text-neutral-400 hover:text-white transition-colors flex items-center justify-between group"
+                      >
+                        <span>{cat.name}</span>
+                        <span className="text-[10px] font-mono text-neutral-600 group-hover:text-neutral-400 transition-colors">
+                          {cat.id}
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </aside>
